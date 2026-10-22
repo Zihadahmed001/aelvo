@@ -1,0 +1,25 @@
+-- Schema 33. Provider exception investigations are evidence-only; they NEVER release payment holds or post cash.
+CREATE TABLE IF NOT EXISTS aelvo_gateway_exception_cases (
+ id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ attempt_id CHAR(32) NOT NULL,
+ issue_type ENUM('uncertain_outcome','validation_discrepancy','risk_review','settlement_variance','provider_dispute') NOT NULL,
+ observed_state VARCHAR(25) NOT NULL,
+ observed_unsettled_minor BIGINT UNSIGNED NULL,
+ provider_reference VARCHAR(120) NOT NULL,
+ details TEXT NOT NULL,
+ evidence_id CHAR(32) NOT NULL,
+ request_key CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL UNIQUE,
+ request_hash CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ state ENUM('Pending','Reviewed','Rejected') NOT NULL DEFAULT 'Pending',
+ proposed_by BIGINT UNSIGNED NOT NULL,
+ reviewed_by BIGINT UNSIGNED NULL,
+ review_notes TEXT NULL,
+ created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ reviewed_at DATETIME NULL,
+ FOREIGN KEY (attempt_id) REFERENCES aelvo_gateway_attempts(id),
+ FOREIGN KEY (evidence_id) REFERENCES aelvo_media(id),
+ FOREIGN KEY (proposed_by) REFERENCES aelvo_users(id),
+ FOREIGN KEY (reviewed_by) REFERENCES aelvo_users(id),
+ INDEX pending_cases(state,created_at),
+ INDEX attempt_cases(attempt_id,created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

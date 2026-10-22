@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS aelvo_order_finance (
+ order_id BIGINT UNSIGNED PRIMARY KEY, advance_minor BIGINT UNSIGNED NOT NULL DEFAULT 0,
+ FOREIGN KEY(order_id) REFERENCES aelvo_orders(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS aelvo_payment_proofs (
+ id CHAR(32) PRIMARY KEY, order_id BIGINT UNSIGNED NOT NULL,
+ method VARCHAR(30) NOT NULL, reference VARCHAR(100) NOT NULL,
+ claimed_minor BIGINT UNSIGNED NOT NULL, disk_name VARCHAR(80) NOT NULL,
+ mime VARCHAR(80) NOT NULL, bytes BIGINT UNSIGNED NOT NULL,
+ status VARCHAR(20) NOT NULL DEFAULT 'Pending', note TEXT NOT NULL,
+ created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY(order_id) REFERENCES aelvo_orders(id), INDEX review_queue(status,created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS aelvo_order_receipts (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY, order_id BIGINT UNSIGNED NOT NULL,
+ method VARCHAR(30) NOT NULL, reference VARCHAR(100) NOT NULL,
+ amount_minor BIGINT UNSIGNED NOT NULL, event_id CHAR(32) NOT NULL UNIQUE,
+ proof_id CHAR(32) NULL UNIQUE, created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ UNIQUE KEY provider_reference(method,reference),
+ FOREIGN KEY(order_id) REFERENCES aelvo_orders(id), FOREIGN KEY(event_id) REFERENCES aelvo_finance_events(id),
+ FOREIGN KEY(proof_id) REFERENCES aelvo_payment_proofs(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

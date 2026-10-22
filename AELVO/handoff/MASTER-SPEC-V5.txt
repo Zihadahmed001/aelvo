@@ -1,0 +1,2602 @@
+MASTER PROMPT V5 — COMPLETE SEO REQUIREMENTS
+BANGLADESH-FOCUSED E-COMMERCE + MINI ERP
+WITH SECURE WEB INSTALLER & CPANEL DEPLOYMENT
+
+You are a senior full-stack software architect, UI/UX designer, PHP/MySQL engineer, security engineer, and QA engineer.
+
+Your task is to build a complete, production-ready, scalable, secure, modern, responsive Bangladesh-focused E-commerce + Mini ERP web application.
+
+IMPORTANT:
+Do not start coding the whole system immediately.
+
+Follow this development order strictly:
+
+PHASE 1 → UI/UX Planning
+PHASE 2 → Feature Review
+PHASE 3 → System Architecture
+PHASE 4 → Database Design
+PHASE 5 → Core Module Development
+PHASE 6 → Third-party Integrations
+PHASE 7 → Testing
+PHASE 8 → Security & Performance
+PHASE 9 → Web Installer
+PHASE 10 → cPanel Deployment
+PHASE 11 → Final Production Audit
+
+At the end of every major phase, summarize what was completed and what comes next.
+
+==================================================
+1. PROJECT GOAL
+==================================================
+
+Build a professional Bangladesh-focused E-commerce platform combined with a Mini ERP.
+
+The system must handle:
+
+• Public storefront
+• Product management
+• Category/subcategory management
+• Brands
+• Product variants
+• Inventory
+• Purchases
+• Suppliers
+• Customers
+• Orders
+• Manual/offline sales
+• Payments
+• COD
+• Advance payments
+• Courier integration
+• Expenses
+• Accounts
+• Financial reports
+• Profit/loss
+• Stock reports
+• Customer management
+• Coupons
+• Promotions
+• CMS
+• Role-based staff management
+• Audit logs
+• Reports
+• Website settings
+• SEO
+• SMTP
+• SMS/OTP readiness
+• AI integration readiness
+• Fraud/risk detection readiness
+• Backup/restore
+• Secure web installer
+
+The final project must work properly on:
+
+• localhost/XAMPP
+• Apache
+• PHP hosting
+• cPanel shared hosting
+• MySQL/MariaDB
+
+Command-line access must NOT be required for normal installation.
+
+==================================================
+2. RECOMMENDED TECHNOLOGY
+==================================================
+
+Use:
+
+Backend:
+PHP 8+
+
+Database:
+MySQL or MariaDB
+
+Database access:
+PDO with prepared statements
+
+Frontend:
+HTML5
+CSS3
+JavaScript
+Bootstrap 5
+
+Optional:
+AJAX / Fetch API where appropriate
+
+Architecture:
+
+Use a clean modular MVC-style architecture even if using Core PHP.
+
+Do not mix database queries directly inside frontend templates.
+
+Separate:
+
+controllers
+models
+views
+services
+helpers
+middleware
+config
+routes
+storage
+uploads
+logs
+
+The system should be easy to maintain and extend.
+
+==================================================
+3. UI / UX REQUIREMENTS
+==================================================
+
+The interface must feel like a modern professional commercial application.
+
+Avoid outdated generic Bootstrap appearance.
+
+Public storefront should include:
+
+• Responsive navbar
+• Search
+• Category navigation
+• Hero/banner section
+• Featured categories
+• Featured products
+• New arrivals
+• Best sellers
+• Promotional products
+• Product cards
+• Product quick view
+• Product details
+• Related products
+• Recently viewed
+• Cart
+• Checkout
+• Customer account
+• Order tracking
+• Wishlist
+• Footer
+• Policy pages
+
+Mobile experience must be treated as a priority.
+
+The admin panel must have:
+
+• Professional sidebar
+• Top navigation
+• Dashboard cards
+• Charts
+• Quick actions
+• Notifications
+• Search
+• Tables
+• Filters
+• Pagination
+• Responsive forms
+• Confirmation dialogs
+• Toast notifications
+• Activity history
+
+Do not use unnecessary animation.
+
+==================================================
+4. CUSTOMER SYSTEM
+==================================================
+
+Customer features:
+
+• Registration
+• Login
+• Logout
+• Password recovery
+• Profile management
+• Address book
+• Multiple shipping addresses
+• Order history
+• Order details
+• Order tracking
+• Wishlist
+• Saved cart
+• Reviews
+• Account security
+• Phone verification readiness
+• Email verification readiness
+• Google authentication readiness
+
+Support both:
+
+Guest Checkout
+
+and
+
+Registered Customer Checkout.
+
+==================================================
+5. PRODUCT MANAGEMENT
+==================================================
+
+Products must support:
+
+• Product name
+• Slug
+• SKU
+• Barcode
+• Category
+• Subcategory
+• Brand
+• Short description
+• Full description
+• Regular price
+• Sale price
+• Cost price
+• Stock
+• Minimum stock alert
+• Product status
+• Featured status
+• New arrival status
+• Best seller status
+• Weight
+• Dimensions
+• Product tags
+• SEO title
+• SEO description
+• Multiple images
+• Main image
+• Gallery
+• Variants
+
+Variants may include:
+
+• Size
+• Color
+• Material
+• Style
+• Storage
+• Other configurable attributes
+
+Each variant may have its own:
+
+• SKU
+• Stock
+• Price
+• Cost price
+• Image
+
+==================================================
+6. INVENTORY SYSTEM
+==================================================
+
+Do not maintain inventory by simply changing one stock number.
+
+Create a proper stock ledger.
+
+Every stock movement must be recorded.
+
+Stock movement types may include:
+
+• Opening stock
+• Purchase
+• Customer order
+• Manual sale
+• Return
+• Order cancellation
+• Damaged stock
+• Adjustment
+• Supplier return
+• Transfer
+
+Each stock movement should store:
+
+• Product
+• Variant
+• Quantity
+• Movement type
+• Reference
+• Previous quantity
+• New quantity
+• User
+• Date/time
+• Notes
+
+Prevent negative inventory unless admin explicitly allows it.
+
+Add low-stock alerts.
+
+==================================================
+7. STOCK RESERVATION
+==================================================
+
+When an order is placed:
+
+Reserve the required stock.
+
+Do not immediately permanently deduct inventory until the configured order/payment workflow determines it should be deducted.
+
+Handle:
+
+• Pending order
+• Advance payment pending
+• Confirmed order
+• Courier booking
+• Cancelled order
+• Failed delivery
+• Returned order
+
+Reserved stock must be released automatically when appropriate.
+
+Prevent overselling.
+
+==================================================
+8. ORDER MANAGEMENT
+==================================================
+
+Order statuses should be configurable.
+
+Default examples:
+
+Pending
+Awaiting Advance Payment
+Confirmed
+Processing
+Packed
+Courier Booked
+Shipped
+In Transit
+Delivered
+Cancelled
+Failed Delivery
+Returned
+Refunded
+Partial Refund
+
+Each order must maintain a status history.
+
+Store:
+
+• Order number
+• Customer
+• Products
+• Variants
+• Quantity
+• Product price
+• Discounts
+• Shipping charge
+• Tax
+• Advance payment
+• Remaining COD
+• Payment status
+• Courier status
+• Address
+• Customer notes
+• Admin notes
+• Order source
+• Created by
+• Date/time
+
+==================================================
+9. MANUAL / OFFLINE SALES
+==================================================
+
+Admin/staff must be able to create orders manually.
+
+Useful for:
+
+• Facebook orders
+• WhatsApp orders
+• Phone orders
+• Physical shop sales
+• Messenger orders
+
+Admin should be able to:
+
+Search existing customer
+
+or
+
+Create customer quickly.
+
+Manual order must use the same inventory/accounting system as website orders.
+
+==================================================
+10. PURCHASE & SUPPLIER MANAGEMENT
+==================================================
+
+Supplier module:
+
+• Supplier name
+• Company
+• Phone
+• Email
+• Address
+• Notes
+• Outstanding balance
+• Transaction history
+
+Purchase system:
+
+• Purchase number
+• Supplier
+• Products
+• Variants
+• Quantity
+• Purchase price
+• Discount
+• Shipping/import cost
+• Other costs
+• Total
+• Paid amount
+• Due amount
+• Payment method
+• Purchase status
+
+Receiving a purchase should update inventory ledger.
+
+==================================================
+11. ADVANCE PAYMENT / PARTIAL COD
+==================================================
+
+The admin must be able to configure advance payment rules.
+
+Examples:
+
+• No advance required
+• Fixed advance amount
+• Percentage advance
+• Product-based advance
+• Category-based advance
+• Customer-risk-based advance
+• Order-value-based advance
+
+Example:
+
+Order total = ৳2,000
+
+Advance paid = ৳500
+
+Courier COD amount = ৳1,500
+
+The system must never send the full ৳2,000 COD amount to the courier after receiving ৳500 advance.
+
+Maintain:
+
+Order Total
+Advance Paid
+Remaining Due
+Courier COD Amount
+Courier Collection
+Refund
+Courier Charge
+Settlement
+
+==================================================
+12. PAYMENT SYSTEM
+==================================================
+
+Payment architecture must support:
+
+• Cash on Delivery
+• Manual payment
+• Bank transfer
+• Mobile Financial Services
+• Online payment gateway integration
+
+Bangladesh-ready integrations should be architecturally prepared for:
+
+• bKash
+• Nagad
+• Rocket
+• SSLCommerz
+• Other gateways
+
+Do not hard-code gateways into order logic.
+
+Use payment service classes/adapters.
+
+Store:
+
+• Transaction ID
+• Gateway
+• Amount
+• Status
+• Request data
+• Response data
+• Verification result
+• Date/time
+
+Prevent duplicate payment processing.
+
+==================================================
+13. PAYMENT RECONCILIATION
+==================================================
+
+Create payment reconciliation functionality.
+
+Admin should be able to compare:
+
+Expected Amount
+
+vs
+
+Received Amount.
+
+Support:
+
+• Advance payment reconciliation
+• Online gateway reconciliation
+• Courier COD reconciliation
+• Refund reconciliation
+• Manual account adjustment
+
+Every reconciliation adjustment must be logged.
+
+==================================================
+14. COUPON & PROMOTION ENGINE
+==================================================
+
+Create an advanced promotion system.
+
+Support:
+
+• Percentage discount
+• Fixed discount
+• Free shipping
+• Product discount
+• Category discount
+• Brand discount
+• Customer-specific coupon
+• First-order coupon
+• Minimum-order coupon
+• Maximum discount cap
+• Usage limits
+• Per-customer limits
+• Start/end date
+• Automatic promotion
+• Coupon code promotion
+
+Prevent incompatible promotions from stacking unless admin allows them.
+
+==================================================
+15. SHIPPING SYSTEM
+==================================================
+
+Shipping rules must be dynamic.
+
+Support:
+
+• Inside Dhaka
+• Outside Dhaka
+• District-based rates
+• Zone-based rates
+• Weight-based rates
+• Order-value-based rates
+• Product-specific rates
+• Free shipping
+• Promotional shipping
+
+Shipping rules should be configurable from Admin Panel.
+
+==================================================
+16. STEADFAST COURIER INTEGRATION
+==================================================
+
+Integrate Steadfast through a separate Courier Service Layer.
+
+Features:
+
+• Create parcel
+• Send customer data
+• Send address
+• Send invoice/order number
+• Send correct COD amount
+• Save courier consignment ID
+• Track delivery status
+• Sync courier status
+• Cancel where API supports it
+• View courier response
+• Courier settlement
+• Reconciliation
+• Return handling
+• Failed delivery handling
+
+Never expose courier API credentials publicly.
+
+Courier credentials must be configurable from Admin Panel or environment/config.
+
+Architecture must allow adding:
+
+Pathao
+RedX
+Paperfly
+Other courier providers
+
+later without rewriting order logic.
+
+==================================================
+17. CUSTOMER RISK / FRAUD SYSTEM
+==================================================
+
+Prepare customer risk detection.
+
+Store historical information such as:
+
+• Total orders
+• Successful deliveries
+• Cancelled orders
+• Failed deliveries
+• Returned orders
+• COD failures
+
+Admin can:
+
+• Flag customer
+• Block customer
+• Add notes
+• Require advance payment
+• Allow COD
+• Disable COD
+
+Phone-based risk lookup should be supported if a legitimate third-party API is added later.
+
+Do not automatically make irreversible decisions solely based on one risk signal.
+
+==================================================
+18. DUPLICATE ORDER PREVENTION
+==================================================
+
+Detect suspicious duplicate orders based on:
+
+• Phone
+• Address
+• Product
+• Recent order time
+• Browser/session
+• Email where available
+
+Do not automatically delete orders.
+
+Flag them for admin review or require confirmation.
+
+==================================================
+19. ACCOUNTING / MINI ERP
+==================================================
+
+Create an account system.
+
+Account examples:
+
+Cash
+Bank
+bKash
+Nagad
+Rocket
+Payment Gateway
+Courier Receivable
+
+Transactions:
+
+Income
+Expense
+Transfer
+Purchase Payment
+Supplier Payment
+Customer Payment
+Refund
+Courier Settlement
+Adjustment
+
+Each transaction must have a ledger entry.
+
+Avoid editing balances directly.
+
+Balance should be calculated from transactions.
+
+==================================================
+20. EXPENSE MANAGEMENT
+==================================================
+
+Expense fields:
+
+• Expense category
+• Date
+• Amount
+• Payment account
+• Description
+• Reference
+• Attachment
+• Created by
+
+Categories may include:
+
+Marketing
+Salary
+Courier
+Packaging
+Rent
+Utilities
+Software
+Office
+Transportation
+Import
+Miscellaneous
+
+==================================================
+21. PROFIT CALCULATION
+==================================================
+
+Do not calculate profit as:
+
+Sales - Purchase Total
+
+Use actual product cost.
+
+Calculate:
+
+Revenue
+COGS
+Discount
+Courier Expense
+Gateway Fee
+Return Cost
+Refund
+Operational Expense
+
+Provide:
+
+Gross Profit
+Net Profit
+
+Reports by:
+
+Today
+Yesterday
+Week
+Month
+Custom Date
+Product
+Category
+Order
+Customer
+
+==================================================
+22. ADMIN USERS & RBAC
+==================================================
+
+Create role-based access control.
+
+Default roles:
+
+Super Admin
+Admin
+Manager
+Sales Staff
+Inventory Staff
+Accounts Staff
+Support Staff
+
+Permissions must be granular.
+
+Examples:
+
+products.view
+products.create
+products.edit
+products.delete
+
+orders.view
+orders.edit
+orders.cancel
+
+accounts.view
+accounts.manage
+
+reports.view
+
+users.manage
+
+settings.manage
+
+installer.access must NOT be available after installation.
+
+==================================================
+23. AUDIT LOG
+==================================================
+
+Record sensitive admin activity.
+
+Store:
+
+• User
+• Action
+• Module
+• Record ID
+• Before data
+• After data
+• IP
+• User agent
+• Timestamp
+
+Examples:
+
+Price changed
+Stock adjusted
+Order cancelled
+Transaction edited
+User permission changed
+Settings changed
+
+==================================================
+24. CMS
+==================================================
+
+Admin should manage:
+
+Homepage banners
+Hero sections
+Featured categories
+Promotional sections
+Pages
+About
+Contact
+Privacy Policy
+Terms & Conditions
+Return Policy
+Shipping Policy
+FAQ
+Footer
+Social media
+Contact information
+
+==================================================
+25. WEBSITE SETTINGS
+==================================================
+
+Settings should include:
+
+Store Name
+Logo
+Favicon
+Phone
+Email
+Address
+Currency
+Timezone
+Default language
+Order prefix
+Invoice prefix
+Tax
+Shipping
+Checkout options
+COD settings
+Advance-payment settings
+SMTP
+SMS
+Courier
+Payment gateways
+Analytics
+Social media
+SEO
+
+==================================================
+26. REPORTING
+==================================================
+
+Reports:
+
+Sales
+Orders
+Products
+Inventory
+Stock movement
+Low stock
+Purchases
+Suppliers
+Customers
+Payments
+COD
+Courier
+Returns
+Expenses
+Accounts
+Income
+Profit
+Loss
+Taxes
+Discounts
+Coupons
+
+Export readiness:
+
+CSV
+Excel
+PDF
+Print
+
+==================================================
+27. DASHBOARD
+==================================================
+
+Admin dashboard should display:
+
+Today's sales
+Today's orders
+Pending orders
+Processing orders
+Delivered orders
+Cancelled orders
+Returns
+Revenue
+Expenses
+Gross profit
+Net profit
+Stock value
+Low-stock count
+Outstanding supplier dues
+Courier receivables
+Recent orders
+
+Provide meaningful charts.
+
+==================================================
+28. NOTIFICATIONS
+==================================================
+
+Internal notifications should support:
+
+New order
+Low stock
+Payment received
+Payment failed
+Return request
+Courier update
+Supplier due
+Suspicious customer/order
+System error
+
+Prepare architecture for:
+
+Email
+SMS
+Push notifications
+
+==================================================
+29. SMTP / EMAIL
+==================================================
+
+Create reusable mail service.
+
+Possible emails:
+
+Order confirmation
+Payment confirmation
+Shipping update
+Delivery update
+Password reset
+Admin alert
+Invoice
+
+SMTP credentials must never be hard-coded.
+
+==================================================
+30. COMPLETE SEO MANAGEMENT SYSTEM — CORE REQUIREMENT
+==================================================
+
+SEO is a core platform requirement, not just meta title and description fields.
+Build a complete, database-backed SEO management system for authorized Admin and SEO Manager users without source-code editing.
+This section replaces the previous brief SEO checklist. All other master-prompt requirements remain applicable.
+Implement it incrementally through the existing phase/approval workflow; do not claim that this specification is working software.
+
+30.1 ADMIN NAVIGATION AND CONTROL
+
+Admin Panel → SEO:
+• Overview / SEO warnings
+• Global Settings
+• Homepage SEO
+• Product SEO
+• Category / Subcategory SEO
+• Brand SEO
+• CMS / Landing Page SEO
+• Redirects
+• Sitemap
+• Robots / Indexing
+• Structured Data
+• Verification
+• Analytics / Marketing Integrations
+• 404 Monitor
+
+Product, category, brand and CMS editors must also expose an SEO tab using the same data and permissions as the central SEO screens.
+Show saved overrides, inherited defaults and the effective rendered value clearly. Provide reset-to-default where appropriate.
+
+30.2 GLOBAL SETTINGS
+
+Editable fields:
+• Default website title and configurable title template
+• Default meta description
+• Optional meta keywords, clearly labelled legacy/optional; Google does not use this tag for web ranking
+• Default social sharing image
+• Canonical website base URL, preferred HTTPS hostname and URL normalization policy
+• Brand/site name
+• Search-engine indexing setting and default robots directives
+• Organization name, URL, contact information, address and other applicable factual information
+• Organization logo for structured data
+• Social profile URLs
+• Default Open Graph title/description/image/type settings
+• Default Twitter/X card, title/description/image and account settings
+
+The canonical base URL is not a command to canonicalize all pages to the homepage.
+Generate each page's full canonical from its own selected public route.
+Use a configured trusted base URL, never an unchecked request Host header.
+
+30.3 PRODUCT SEO
+
+Every product must support:
+• SEO title
+• Meta description
+• Editable URL slug
+• Canonical URL override
+• Open Graph title, description and image
+• Robots index/noindex and follow/nofollow
+• Editable image ALT text
+
+Generate sensible defaults from actual product name, brand, category, description and selected image when overrides are empty.
+Always allow authorized overrides. Do not invent attributes, prices, ratings or promotional claims.
+Use clean URLs such as /product/leather-wallet or /mens-leather-wallet-black, depending on the approved route policy.
+Do not publish multiple competing canonical routes for one product.
+
+30.4 CATEGORY AND SUBCATEGORY SEO
+
+Each category/subcategory must support SEO title, meta description, editable SEO-friendly slug, category description, canonical override, Open Graph data, SEO/social image, index/noindex and follow/nofollow.
+Example route alternatives: /men/shoes, /women/bags, /mens-wallets.
+Choose one consistent route convention during architecture review.
+Categories need useful visible descriptions and crawlable links to products and subcategories.
+
+30.5 BRAND SEO
+
+Each brand must support SEO title, meta description, brand description, SEO URL/slug, canonical override, Open Graph title/description/image, index/noindex and follow/nofollow.
+Use the shared editor and metadata logic instead of a separate hard-coded implementation.
+
+30.6 CMS AND HOMEPAGE SEO
+
+Every CMS page must support page title, SEO title, meta description, slug, canonical override, OG title/description/image, index/noindex and follow/nofollow.
+Applicable pages include Homepage, About, Contact, FAQ, Return Policy, Refund Policy, Shipping Policy, Terms, Privacy Policy and custom landing pages.
+
+Homepage SEO has its own editor for SEO title, meta description, canonical, sharing image and applicable structured data settings.
+Keep the homepage route fixed at the site root. A generic slug control must not accidentally move or duplicate it.
+Do not force homepage metadata to use hard-coded branding or promotional text.
+
+30.7 URLS, SLUGS AND ROUTE OWNERSHIP
+
+Use clean, readable URLs without unnecessary IDs or query strings. Necessary pagination and filter parameters remain supported.
+Validate slug normalization, length, Unicode handling, reserved routes and collisions across all content types sharing a namespace.
+Use a database unique constraint on normalized public paths, with friendly validation errors and transaction-safe conflict handling.
+Reserve admin, account, cart, checkout, search, install, API, assets, robots.txt, sitemap and verification routes.
+Decide lowercase, trailing-slash and HTTPS/hostname rules once; consistently use them in links, canonicals, redirects, OG URLs and sitemaps.
+
+A slug change must atomically update route ownership and create a 301 from the old public route.
+Refresh internal links, breadcrumbs, schema URLs, sitemap entries and metadata caches.
+Category-parent changes must account for descendant routes if nested paths are chosen.
+Do not release historical redirect paths for conflicting content accidentally.
+
+30.8 REDIRECT MANAGEMENT
+
+Admin → SEO → Redirects supports create, edit, disable and review.
+Store old path/URL, destination URL, HTTP type (301 or 302), enabled status, created/updated timestamps and responsible user.
+Record whether generated automatically from a slug change or created manually.
+Use 301 for permanent route changes; use 302 only for intentional temporary redirection.
+
+Prevent self-redirects, cycles, duplicate active source rules and conflicting live routes.
+Check the entire redirect graph on changes, including previously disabled rules when re-enabled.
+Update historical redirects to the latest destination to avoid unnecessary chains.
+Default destinations to the same approved website. External destinations require an explicit validated host policy; reject unsafe schemes and malformed URLs.
+Define query-string handling explicitly; never blindly append sensitive parameters to destination URLs.
+Do not use unrestricted regular expressions for the initial redirect manager.
+Show broken, inaccessible or non-final destinations as warnings without automatically deleting rules.
+If performing remote destination checks, restrict allowed hosts and prevent requests to private/internal networks.
+
+30.9 XML SITEMAPS
+
+Serve /sitemap.xml and automatically include eligible products, categories/subcategories, brands and CMS pages, including the homepage.
+Only include published, public, indexable, canonical URLs that resolve successfully.
+Exclude admin, account, cart, checkout, internal search, unpublished content, noindex pages, redirects, errors, noncanonical variants and ordinary filter/sort URLs.
+Use absolute URLs, UTF-8, correct XML escaping and accurate lastmod values reflecting substantive changes.
+Do not reset every lastmod on every request.
+Support sitemap indexes and split files before either 50,000 URLs or 50 MB uncompressed is exceeded.
+
+Regenerate/invalidate on publish/unpublish, relevant content changes, slug changes, canonical/indexing changes and removal.
+Use bounded database queries and atomic publication so visitors never receive a half-written XML file.
+Support cPanel deployment without mandatory command-line setup or a permanent queue worker.
+Use cached generation/invalidation with an authorized rebuild action; optionally support cPanel cron for larger catalogs.
+Show last successful generation, URL count, exclusions, errors and the submission URL in Admin.
+Do not claim that sitemap inclusion guarantees crawling or indexing.
+
+30.10 ROBOTS.TXT AND INDEXING
+
+Serve a safe root /robots.txt with an absolute Sitemap directive.
+Allow authorized users to configure crawl rules through a validated editor and preview affected representative URLs.
+Warn clearly before publishing rules that block all public content, required assets or important categories/products.
+Do not accidentally carry development/staging disallow-all or sitewide noindex into production.
+Protect staging with access control; provide a launch review of effective indexing settings.
+
+robots.txt controls crawling; it is neither access control nor a reliable method of removing URLs from search results.
+Use authentication/authorization for private pages, noindex on appropriate reachable HTML pages, and X-Robots-Tag where appropriate for non-HTML responses.
+Do not expose private paths or documents on the assumption robots.txt protects them.
+Do not write an unsupported noindex directive into robots.txt.
+When a crawler must see a page's noindex or canonical, do not block that page in robots.txt.
+Document any later crawl-blocking policy separately from deindexing and verify its intended effect before deployment.
+
+30.11 CANONICAL, FILTER, SEARCH AND PAGINATION POLICY
+
+Produce one effective canonical on applicable HTML pages, using absolute URLs.
+Validate overrides and warn about destinations that redirect, return errors, are noindex, are unrelated, or conflict with sitemap/internal-link policy.
+Never canonicalize all categories, filtered pages or pagination pages indiscriminately to the homepage.
+Canonical annotations are search-engine signals, not guaranteed directives.
+
+Proposed policy for Feature Review, to be implemented and tested before deployment:
+
+• Normal product/category/brand/CMS pages: self-canonical and indexable unless deliberately configured otherwise.
+• Equivalent campaign/tracking URLs: canonical to the clean equivalent, preserving meaningful content and pagination parameters.
+• Duplicate product paths: preferably 301 to the selected primary route; otherwise use the same canonical and consistent internal links.
+• Category pagination: each valid page has its own canonical, e.g. /men/shoes?page=2. Do not canonicalize all pages to page 1. Normalize ?page=1 to the base URL. Use real crawlable <a href> links; load-more/infinite-scroll may enhance these links but must not replace discovery.
+• Out-of-range/nonexistent pagination and invalid filter combinations: return an appropriate real 404, not an unlimited series of empty 200 pages.
+• Ordinary filter combinations that produce different subsets: default noindex,follow; omit cross-page canonical consolidation rather than incorrectly treating every subset as identical to its parent. Exclude these URLs from sitemaps. Keep them crawlable while relying on noindex.
+• Alternative sort orders: default noindex,follow and exclude from sitemaps; avoid a blanket canonical to an unrelated unfiltered/paginated product set. Choose a canonical-only approach solely for verified equivalent representations, documented in the route policy.
+• Selected valuable filter landing pages: only explicitly approved pages with useful unique content, stable clean routes and curated internal links may become indexable/self-canonical. Do not auto-generate thousands of indexable combinations.
+• Internal search (/search?q=shoe): noindex,follow and no sitemap inclusion. Normalize/limit parameters and avoid publishing unlimited crawlable query links. Do not depend on search results for product discovery.
+• Simple selectable variant URLs: canonical to the parent only when they represent substantially the same product page. If distinct indexable variant landing pages are approved, use a separate documented canonical/variant-schema strategy. Selection, displayed price, stock and schema must agree.
+
+Review crawl logs and URL inventory before adding broader facet/search robots blocks. Do not combine those blocks with a promise that crawlers will read the blocked pages' noindex.
+Maintain product discovery through ordinary indexable categories and sitemaps, even where noindex pages exist.
+Provide concrete URL examples and expected status/canonical/robots/sitemap outcomes in the deployment checklist.
+
+30.12 STRUCTURED DATA
+
+Generate valid JSON-LD from actual database content through reusable schema builders.
+Support Organization, WebSite, BreadcrumbList, Product and Offer on appropriate pages.
+Support Review/AggregateRating only when real, published reviews exist and are visible to customers.
+Support FAQPage for eligible visible FAQ content where applicable; do not promise Google FAQ rich results for an ordinary fashion store.
+Prepare an Article/BlogPosting extension point without building a full blog before Feature Review approval.
+
+Product data may include actual name, images, description, SKU, brand, price, currency, availability, canonical product URL, rating and review count.
+Use the real store currency (BDT when configured), numeric prices and appropriate availability values.
+Use real offer dates and identifiers only when available; never invent GTINs, reviews or rating counts.
+Keep schema price/availability synchronized with the visible page and transactional data, including variant selection and promotions.
+Invalidate affected caches after price, stock, review or product-status changes.
+Encode JSON safely rather than concatenating raw user input into script elements.
+Only emit schema appropriate to the page's visible content; no Product schema on unrelated pages.
+Validate with relevant schema tools/Rich Results Test where supported. Passing validation does not guarantee a rich result.
+
+30.13 BREADCRUMBS AND INTERNAL LINKS
+
+Provide visible, accessible, crawlable breadcrumbs, e.g. Home → Men → Shoes → Sneakers → Product.
+Generate consistent BreadcrumbList JSON-LD from the same hierarchy.
+When a product belongs to several categories, choose a stable primary breadcrumb hierarchy.
+Navigation, category pages, related products and breadcrumbs must link to the current canonical public paths.
+Avoid orphan products and links that depend entirely on JavaScript click handlers.
+
+30.14 SOCIAL SHARING
+
+Render og:title, og:description, og:image, og:url and appropriate og:type; include site name and applicable image dimensions/ALT information.
+Support Twitter/X card metadata with per-page fallbacks to the page's SEO and global defaults.
+Use public absolute HTTPS URLs for images and pages.
+Provide metadata suitable for compatible Facebook, Messenger, WhatsApp, LinkedIn and other sharing consumers.
+Explain that preview rendering and cache refresh depend on each platform; identical appearance everywhere cannot be guaranteed.
+
+30.15 IMAGE SEO AND DELIVERY
+
+Every meaningful product image supports editable ALT text and sensible generated defaults, with optional image title where useful.
+Use descriptive filenames where practical while retaining server-generated uniqueness and secure upload validation.
+Provide width/height or stable aspect ratios, responsive image sizes/srcset, compression and suitable modern formats with fallbacks where needed.
+Lazy-load appropriate below-the-fold images. Do not lazy-load the main above-the-fold product/hero image when it is the likely largest visible element.
+Decorative images use empty ALT text; do not keyword-stuff meaningful image descriptions.
+Keep image replacements and generated thumbnails synchronized with metadata and schema references.
+
+30.16 INDEXING AND DISCONTINUED PRODUCTS
+
+Authorized admins can select index/noindex and follow/nofollow for every supported content type.
+Resolve defaults consistently and show the effective result, including any global noindex override.
+Publishing a page must not silently override an intentional noindex setting.
+
+Discontinued products must not be automatically deleted.
+Admin chooses the appropriate behavior:
+• Keep a useful 200 page with a clear Discontinued status and alternative products.
+• Keep it live but noindex.
+• 301 to a genuinely relevant replacement where appropriate.
+• Permanently remove with an appropriate 404/410 when appropriate.
+Temporary out-of-stock products normally remain accessible with truthful availability.
+Do not mass-redirect missing products to the homepage or irrelevant categories.
+Update sitemap membership, internal links, schema and caches after the selected change.
+
+30.17 SEO AND SOCIAL PREVIEWS
+
+Show a Google-style search preview: effective page title, public URL and meta description.
+Show a social share preview where practical, including fallback images and text.
+Display title/description length guidance and truncation warnings, but never block a valid save solely because of length.
+Preview text is illustrative; Google and sharing platforms may choose different titles, descriptions or crops.
+
+30.18 SEO WARNINGS
+
+Provide lightweight warnings with links to affected records:
+• Missing SEO title or description, distinguishing an empty override from a working generated default
+• Duplicate/conflicting slug or route
+• Missing meaningful image ALT
+• Missing/invalid effective canonical
+• Product without a useful description or image
+• Broken redirect, redirect chain or unavailable destination
+• Unexpected noindex or global indexing restriction
+• Sitemap/robots/canonical conflicts
+
+Warnings must not make destructive changes automatically.
+Length and editorial recommendations do not block saving; actual invalid data, unsafe URLs, slug collisions and redirect loops must be blocked with useful errors.
+Do not show invented Google scores or claim a checklist score guarantees ranking.
+
+30.19 SEARCH CONSOLE VERIFICATION
+
+Support safe configuration of applicable verification methods:
+• HTML meta verification token rendered centrally
+• Restricted verification-file serving/upload with exact validated filename and content
+• DNS TXT instructions using the actual provider-supplied token
+
+Do not accept arbitrary executable files or arbitrary HTML/JavaScript in a verification field.
+Do not claim ownership verification succeeded merely because a token was saved.
+Show the sitemap URL and setup guidance; Search Console account access and DNS changes require the actual owner/provider setup.
+
+30.20 ANALYTICS AND MARKETING INTEGRATIONS
+
+Provide centralized optional settings and enable/disable controls for GA4 and Google Tag Manager.
+Prepare approved adapters for Meta Pixel, Meta Conversions API, TikTok Pixel and other approved platforms.
+Validate IDs/tokens and keep credentials server-side; never hard-code them into templates or expose server API secrets in browser output.
+Use integration-specific fields instead of an unrestricted paste-any-script setting.
+Keep marketing features optional so the storefront and SEO work when all tracking is disabled.
+Apply the store's approved consent/privacy configuration and avoid sending personal data in page URLs or ordinary analytics events.
+Prevent duplicate GA4 loading through both direct integration and GTM.
+Where approved, use a shared event interface for product views, add-to-cart, checkout and purchase; deduplicate purchase events and browser/server events using stable event IDs.
+Define purchase-event timing for COD/advance-payment workflows and ensure totals/currency match the event's documented business meaning.
+Do not implement all future third-party adapters automatically; select live integrations during Feature Review.
+
+30.21 PERFORMANCE AND MOBILE SEO
+
+Render titles, metadata, canonical, robots, structured data and essential public content in the initial PHP HTML response.
+Do not require JavaScript execution, customer authentication or a separate bot-only page for basic SEO.
+Use efficient indexed queries, bounded pagination, appropriate HTML/metadata caching, optimized images, asset caching and minimal unnecessary JavaScript.
+Never share cached customer/account/cart/checkout information across users.
+Invalidate public caches on relevant catalog, pricing, availability and SEO changes.
+Prepare for good Core Web Vitals; measure representative mobile pages and record findings during testing rather than claiming performance without evidence.
+Use responsive layouts with equivalent important content/metadata on mobile, usable tap targets, stable image space and accessible navigation.
+Avoid intrusive overlays, major layout shifts and mobile-only missing content.
+
+30.22 CUSTOM 404 AND ERROR MONITORING
+
+Serve a professional custom 404 page with an actual HTTP 404 status, search, homepage link, popular categories and useful product recommendations where available.
+Do not respond with 200 for missing content or silently redirect every missing URL to the homepage.
+Log recurring 404 paths with first/last occurrence and counts; group repeated entries and expose review actions to authorized staff.
+Sanitize logs, redact sensitive query values and apply retention/rate limits so logging cannot grow indefinitely or expose customer data.
+Creating a redirect from a logged path remains an explicit authorized action.
+
+30.23 ROLE-BASED PERMISSIONS AND AUDIT
+
+Add an SEO Manager role with an appropriate permission subset.
+Suggested permissions:
+seo.view
+seo.global.edit
+seo.homepage.edit
+seo.products.edit
+seo.categories.edit
+seo.brands.edit
+seo.cms.edit
+seo.redirects.manage
+seo.sitemap.manage
+seo.robots.manage
+seo.schema.manage
+seo.verification.manage
+seo.analytics.manage
+seo.errors.view
+
+Enforce permission checks server-side on every route, AJAX endpoint and bulk action, with CSRF protection and validation.
+An SEO Manager must not automatically gain account, payment, financial or user-management access.
+Record important slug, redirect, index/noindex, follow/nofollow, canonical, global setting, robots, verification and integration changes in the audit log with actor, timestamp, affected record and safe before/after data.
+Redact secrets from logs. Record overrides and automatic redirect generation together where possible.
+
+30.24 CENTRAL ARCHITECTURE AND DATA MODEL
+
+Use reusable services such as:
+SeoResolver — resolves explicit overrides, generated page defaults and global defaults.
+PublicUrlService — owns normalized paths and canonical generation.
+RedirectService — validates and resolves redirects.
+RobotsPolicyService — resolves route/global/page indexing and crawl policy.
+StructuredDataService — builds factual page-specific schema.
+SitemapService — generates and caches eligible public URLs.
+SeoDiagnosticsService — surfaces actionable warnings.
+AnalyticsIntegrationService — loads only configured, approved integrations.
+
+These are conceptual responsibilities; finalize class and table names during System Architecture / Database Design.
+Plan persisted global SEO settings, entity SEO overrides, image ALT metadata, unique public route registry, redirect records, verification settings, integration settings, aggregated 404 logs and sitemap generation state.
+Use explicit entity relationships or a validated shared SEO resource registry; prevent orphan metadata.
+Reuse the existing settings, media, permissions and audit systems where appropriate instead of creating duplicate sources of truth.
+Store overrides separately from generated values so defaults can change without overwriting intentional edits.
+Make route/redirect changes transactional. Escape HTML attributes, serialize JSON-LD safely and validate permitted URL schemes.
+Do not scatter hard-coded titles, domains, tracking IDs or robot policies throughout templates.
+
+30.25 FUTURE BLOG READINESS
+
+Prepare extension points for fashion guides, styling advice, shoe guides, men's/women's fashion, gift guides and seasonal articles.
+Future posts should support categories, author, SEO, appropriate schema, featured image and related products.
+Do NOT build the complete blog until approved during Feature Review.
+
+30.26 ACCEPTANCE CRITERIA AND RELEASE GATE
+
+SEO is not complete until verified against actual application responses and permissions:
+1. All supported entities and homepage expose persisted authorized overrides and sensible empty-field fallbacks.
+2. Raw server HTML has correct effective title, description, canonical, robots, OG/Twitter tags and page-appropriate factual JSON-LD without duplicate/conflicting tags.
+3. Slug changes create correct 301s; repeated changes resolve without loops or unnecessary chains; concurrent collisions are rejected safely.
+4. Sitemaps contain only eligible current canonical URLs and update after publish, slug, canonical/indexing and removal changes. Verify XML parsing, URL escaping and splitting boundaries.
+5. Representative filter, sort, campaign, variant, search and paginated URLs produce the approved status/canonical/robots/sitemap behavior.
+6. Page 2 and later remain discoverable by ordinary links and are not mistakenly canonicalized to page 1.
+7. robots.txt does not prevent crawlers from seeing relied-upon noindex rules or block essential public content/assets.
+8. A nonexistent URL returns a real 404; discontinued product actions follow the saved policy and truthful availability.
+9. Product schema prices, currency, stock and real review counts match visible content after cache invalidation.
+10. Ordinary employees cannot edit SEO through direct requests; authorized changes produce audit records.
+11. Malicious metadata, JSON-LD strings, redirect URLs, upload names and verification input cannot execute code or escape validation.
+12. Mobile layouts, image ALT/dimensions, initial HTML content and performance are checked on representative home, listing and product pages.
+13. Disabled integrations do not load; enabled integrations use configured IDs and do not duplicate events.
+14. Production uses the correct HTTPS domain and approved indexing settings, with no accidental localhost/staging canonicals.
+15. README includes SEO operations, sitemap submission, slug/redirect behavior, robots/noindex distinctions, verification setup and recovery guidance.
+
+Record failures and fixes; do not label a visual mockup, specification or unconnected admin form as implemented functionality.
+No keyword stuffing, hidden text, cloaking, fake reviews, spam pages or guaranteed-ranking promises.
+
+30.27 OFFICIAL TECHNICAL REFERENCES
+
+Reviewed for this specification on 2026-10-06. Recheck applicable provider requirements during implementation and release.
+Google ecommerce URL structure:
+https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites
+Google pagination:
+https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading
+Google canonical guidance:
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+Google noindex guidance:
+https://developers.google.com/search/docs/crawling-indexing/block-indexing
+Google faceted navigation:
+https://developers.google.com/crawling/docs/faceted-navigation
+Google sitemaps:
+https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+Google structured data policies:
+https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+Google FAQ rich-result limitations:
+https://developers.google.com/search/blog/2023/08/howto-faq-changes
+Google meta keywords guidance:
+https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag
+
+
+==================================================
+31. FILE UPLOAD SECURITY
+==================================================
+
+All uploads must validate:
+
+MIME type
+Extension
+File size
+Generated safe filename
+
+Prevent:
+
+PHP uploads
+Executable files
+Double-extension attacks
+Path traversal
+
+Store sensitive files outside publicly executable directories where possible.
+
+==================================================
+32. CORE SECURITY
+==================================================
+
+Mandatory security:
+
+PDO prepared statements
+CSRF protection
+XSS escaping
+Input validation
+Output escaping
+Secure sessions
+Session regeneration
+Password hashing
+password_hash()
+password_verify()
+Role checks
+Rate limiting
+Login attempt protection
+Secure cookies
+SameSite cookies
+Authorization checks
+Upload validation
+Secure API authentication
+Sensitive config protection
+
+Never trust client-side validation alone.
+
+==================================================
+33. CONFIGURATION & SECRETS
+==================================================
+
+Never commit real secrets to Git.
+
+Use:
+
+.env
+
+or secure configuration file.
+
+Provide:
+
+.env.example
+
+or
+
+config.example.php
+
+Actual secrets should include:
+
+Database password
+SMTP password
+Payment credentials
+Courier API key
+SMS credentials
+App secret
+
+Protect environment/configuration files from direct web access.
+
+==================================================
+34. ERROR HANDLING
+==================================================
+
+Production users must never see:
+
+Database passwords
+SQL queries
+API secrets
+Stack traces
+File-system paths
+Internal exceptions
+
+Log technical errors securely.
+
+Show friendly user-facing errors.
+
+==================================================
+35. BACKUP & RESTORE
+==================================================
+
+Create backup functionality where reasonably possible.
+
+Support:
+
+Database backup
+Important configuration backup
+
+Optional:
+
+Uploaded media backup
+
+Restore must require:
+
+Super Admin permission
+Confirmation
+Security validation
+
+Never allow arbitrary file restore.
+
+==================================================
+36. API / INTEGRATION ARCHITECTURE
+==================================================
+
+Third-party services must use service classes.
+
+Examples:
+
+PaymentGatewayInterface
+CourierInterface
+SmsInterface
+MailInterface
+
+This allows future integrations without changing core business logic.
+
+==================================================
+37. AI READINESS
+==================================================
+
+Prepare architecture for future AI features such as:
+
+AI product description
+AI customer support
+AI sales insights
+AI fraud detection
+AI inventory forecasting
+
+Do NOT make the core store dependent on an AI service.
+
+==================================================
+38. WEB INSTALLER / FIRST-TIME SETUP WIZARD
+==================================================
+
+Build a professional secure first-time installer similar to WordPress.
+
+When the application loads:
+
+Check whether installation is complete.
+
+If NOT installed:
+
+Automatically redirect to:
+
+/install
+
+If already installed:
+
+The installer must be completely locked.
+
+Installation must work through the browser without requiring SSH or command-line access.
+
+------------------------------------------
+INSTALLER STEP 1
+WELCOME
+------------------------------------------
+
+Show:
+
+Application Name
+Application Version
+Installation introduction
+System requirements summary
+
+Button:
+
+Start Installation
+
+------------------------------------------
+INSTALLER STEP 2
+SERVER REQUIREMENTS
+------------------------------------------
+
+Automatically check:
+
+PHP version
+PDO
+PDO MySQL
+MySQL support
+OpenSSL
+JSON
+cURL
+Mbstring
+Fileinfo
+GD or Imagick if required
+Session support
+Upload support
+
+Check writable directories:
+
+storage/
+storage/logs/
+storage/cache/
+uploads/
+config writable only when required during installation
+
+Show:
+
+PASS
+WARNING
+FAIL
+
+Do not allow installation to continue if a mandatory dependency is missing.
+
+------------------------------------------
+INSTALLER STEP 3
+DATABASE CONFIGURATION
+------------------------------------------
+
+Ask for:
+
+Database Host
+Database Port
+Database Name
+Database Username
+Database Password
+
+Default:
+
+Host = localhost
+Port = 3306
+
+Provide:
+
+Test Database Connection
+
+Do not proceed until connection succeeds.
+
+Never display the database password back in plain text.
+
+After confirmation:
+
+Create all required tables automatically.
+
+Either:
+
+Run internal migrations
+
+or
+
+Securely execute packaged schema files.
+
+Create:
+
+Tables
+Indexes
+Foreign keys
+Default roles
+Default permissions
+Default statuses
+Required settings
+Default system records
+
+Installation must not require phpMyAdmin SQL import manually.
+
+------------------------------------------
+INSTALLER STEP 4
+STORE INFORMATION
+------------------------------------------
+
+Ask for:
+
+Store Name
+Website URL
+Business Email
+Business Phone
+Country
+Currency
+Timezone
+Default Language
+
+Bangladesh-friendly defaults:
+
+Country:
+Bangladesh
+
+Currency:
+BDT
+
+Timezone:
+Asia/Dhaka
+
+Allow changing them.
+
+------------------------------------------
+INSTALLER STEP 5
+SUPER ADMIN
+------------------------------------------
+
+Ask for:
+
+Full Name
+Username
+Email
+Password
+Confirm Password
+
+Apply strong password validation.
+
+Store password using:
+
+password_hash()
+
+Never store plaintext passwords.
+
+The first user must become:
+
+Super Admin
+
+------------------------------------------
+INSTALLER STEP 6
+OPTIONAL BUSINESS SETTINGS
+------------------------------------------
+
+Allow optional configuration of:
+
+Business address
+Invoice information
+Tax
+Order prefix
+Invoice prefix
+
+Do not make third-party integrations mandatory.
+
+------------------------------------------
+INSTALLER STEP 7
+OPTIONAL SMTP
+------------------------------------------
+
+Allow user to configure:
+
+SMTP Host
+SMTP Port
+Encryption
+Username
+Password
+From Email
+From Name
+
+Provide:
+
+Test Email Configuration
+
+Allow:
+
+Skip for now
+
+SMTP can later be configured in Admin Panel.
+
+------------------------------------------
+INSTALLER STEP 8
+OPTIONAL SERVICES
+------------------------------------------
+
+Provide optional setup placeholders for:
+
+Steadfast
+Payment gateways
+SMS provider
+
+Allow:
+
+Configure Now
+
+or
+
+Configure Later
+
+Never block installation because optional API credentials are unavailable.
+
+------------------------------------------
+INSTALLER STEP 9
+INSTALLATION
+------------------------------------------
+
+Before installation:
+
+Show final confirmation.
+
+Then automatically:
+
+Create database schema
+Create default settings
+Create roles
+Create permissions
+Create Super Admin
+Write safe configuration
+Generate application secret if needed
+Create installation lock
+Clear installer temporary information
+
+Use database transactions wherever appropriate.
+
+If installation fails:
+
+Rollback safely where possible.
+
+Show a clean error message.
+
+Do NOT leave a half-installed system silently.
+
+------------------------------------------
+INSTALLER STEP 10
+HEALTH CHECK
+------------------------------------------
+
+After installation automatically check:
+
+Application configuration
+Database connection
+Required tables
+Admin user
+Storage writable
+Uploads writable
+Sessions
+URL configuration
+
+Display something similar to:
+
+Application        ✅ Ready
+Database           ✅ Connected
+Database Tables    ✅ Ready
+Admin Account      ✅ Created
+Storage            ✅ Writable
+Uploads            ✅ Writable
+Mail               ⚠ Not configured
+Courier            ⚠ Not configured
+Payment Gateway    ⚠ Not configured
+
+Warnings for optional services must not mark installation as failed.
+
+------------------------------------------
+INSTALLER STEP 11
+FINISH
+------------------------------------------
+
+Display:
+
+Installation Successful
+
+Buttons:
+
+Go to Admin Panel
+
+Visit Storefront
+
+After successful installation:
+
+The installer must become inaccessible.
+
+==================================================
+39. INSTALLER SECURITY
+==================================================
+
+Installer security is CRITICAL.
+
+After successful installation:
+
+Create a secure installation lock.
+
+Examples:
+
+storage/.installed
+
+or secure config flag/database installation state.
+
+Do not rely only on URL hiding.
+
+When installed:
+
+/install
+
+must return:
+
+404
+
+or
+
+Installation Disabled
+
+Do not show database configuration.
+
+Do not allow reinstall from browser.
+
+The installer must never overwrite an existing production database automatically.
+
+Before creating tables:
+
+Check whether an existing application installation is present.
+
+If important application tables already exist:
+
+STOP.
+
+Show:
+
+Existing installation detected.
+
+Do not delete existing tables.
+
+Do not DROP production tables.
+
+Do not reset users.
+
+Do not reset configuration.
+
+Reinstallation must require intentional server-owner action.
+
+Sensitive installer pages must use:
+
+CSRF protection
+Server-side validation
+Secure sessions
+Input sanitization
+PDO
+Prepared statements
+
+Never expose:
+
+DB password
+SMTP password
+Courier API secret
+Payment API secret
+PHP error stack
+Server paths
+
+Database credentials must not be stored in session longer than necessary.
+
+Remove temporary installer data after success.
+
+Prevent direct access to:
+
+schema files
+migration scripts
+installer configuration
+logs
+environment files
+
+Do not provide a public "Reset Installation" button.
+
+==================================================
+40. CPANEL INSTALLATION FLOW
+==================================================
+
+The final project must support this exact deployment experience:
+
+STEP 1
+
+User buys normal PHP/MySQL cPanel hosting.
+
+STEP 2
+
+User uploads application ZIP to:
+
+public_html
+
+or chosen subdomain directory.
+
+STEP 3
+
+User extracts the ZIP.
+
+STEP 4
+
+User creates an empty MySQL database from:
+
+cPanel → MySQL Databases
+
+Create:
+
+Database
+Database User
+Password
+
+Assign user to database with required privileges.
+
+STEP 5
+
+User opens:
+
+https://domain.com
+
+The application detects that it has not been installed.
+
+Automatically redirect:
+
+https://domain.com/install
+
+STEP 6
+
+Installer checks server requirements.
+
+STEP 7
+
+User enters database credentials.
+
+STEP 8
+
+Installer tests database connection.
+
+STEP 9
+
+User enters:
+
+Store details
+Admin information
+Optional settings
+
+STEP 10
+
+Installer automatically:
+
+Creates tables
+Seeds required data
+Creates admin
+Creates config
+Locks installer
+
+STEP 11
+
+Installation finishes.
+
+User clicks:
+
+Admin Panel
+
+or
+
+Storefront
+
+The expected workflow should therefore be:
+
+UPLOAD ZIP
+↓
+EXTRACT
+↓
+CREATE EMPTY DATABASE
+↓
+OPEN WEBSITE
+↓
+INSTALLER
+↓
+ENTER DB INFO
+↓
+CREATE ADMIN
+↓
+INSTALL
+↓
+WEBSITE READY
+
+Do not require:
+
+SSH
+Terminal
+Composer command
+Artisan command
+Manual SQL import
+Manual config editing
+
+for normal cPanel installation.
+
+If external dependencies are required, package deployment-ready dependencies appropriately where licensing permits.
+
+==================================================
+41. APACHE / .HTACCESS
+==================================================
+
+Provide secure .htaccess configuration where appropriate.
+
+Support:
+
+Clean URLs
+HTTPS redirect option
+Protect hidden files
+Protect .env
+Protect config
+Disable directory listing
+Block executable uploads
+Protect storage/internal directories
+
+Do not create rewrite rules that break common cPanel Apache setups.
+
+==================================================
+42. ENVIRONMENT DETECTION
+==================================================
+
+Application should correctly handle:
+
+localhost
+development
+production
+
+Production mode must:
+
+Disable display_errors
+
+Log errors instead.
+
+Do not expose debugging information.
+
+==================================================
+43. DATABASE DESIGN
+==================================================
+
+Before writing modules:
+
+Create a complete database plan.
+
+Include tables for:
+
+users
+roles
+permissions
+role_permissions
+user_roles
+
+customers
+customer_addresses
+
+categories
+brands
+products
+product_images
+attributes
+attribute_values
+product_variants
+
+inventory_movements
+stock_reservations
+
+orders
+order_items
+order_status_history
+
+payments
+payment_transactions
+
+coupons
+coupon_usage
+promotions
+
+shipping_zones
+shipping_rules
+
+courier_shipments
+courier_events
+courier_settlements
+
+suppliers
+purchases
+purchase_items
+
+accounts
+account_transactions
+
+expense_categories
+expenses
+
+customer_risk_flags
+
+pages
+banners
+
+notifications
+
+settings
+
+audit_logs
+
+password_reset_tokens
+
+sessions where needed
+
+system_logs where appropriate
+
+installation metadata if required
+
+Add appropriate:
+
+Primary keys
+Foreign keys
+Indexes
+Unique constraints
+
+==================================================
+44. DATABASE SAFETY
+==================================================
+
+Use transactions for critical processes.
+
+Examples:
+
+Order placement
+Payment confirmation
+Inventory update
+Purchase receiving
+Refund
+Courier reconciliation
+
+Prevent race conditions where stock or payment data may become inconsistent.
+
+==================================================
+45. ORDER TRANSACTION SAFETY
+==================================================
+
+Order placement must safely handle:
+
+Validate cart
+Validate current price
+Validate current stock
+Create order
+Create order items
+Reserve stock
+Record payment status
+Create audit/reference records
+
+If a critical step fails:
+
+Rollback transaction.
+
+Never create a broken partial order silently.
+
+==================================================
+46. PERFORMANCE
+==================================================
+
+Optimize:
+
+Database queries
+Indexes
+Product listing
+Search
+Admin tables
+Images
+Pagination
+
+Avoid:
+
+N+1 queries
+Loading entire tables
+Uncompressed huge images
+Unnecessary JavaScript
+
+Use lazy loading where appropriate.
+
+==================================================
+47. IMAGE MANAGEMENT
+==================================================
+
+Support:
+
+Multiple images
+Image resize
+Thumbnail generation where available
+Web-friendly file names
+Image optimization
+
+Do not overwrite files using customer-supplied filenames.
+
+==================================================
+48. SEARCH & FILTER
+==================================================
+
+Storefront search:
+
+Product name
+SKU
+Category
+Brand
+Keywords
+
+Filters:
+
+Price
+Category
+Brand
+Availability
+Attributes
+
+Admin search/filter:
+
+Products
+Customers
+Orders
+Transactions
+Purchases
+Suppliers
+Reports
+
+==================================================
+49. TESTING REQUIREMENTS
+==================================================
+
+Test:
+
+Authentication
+Authorization
+Product CRUD
+Variants
+Inventory
+Stock reservation
+Checkout
+Guest checkout
+Registered checkout
+COD
+Advance payment
+Coupons
+Shipping
+Payment
+Manual orders
+Cancellation
+Refund
+Returns
+Courier
+Purchases
+Accounts
+Expenses
+Reports
+Installer
+Installer lock
+cPanel-style deployment
+
+Test security cases:
+
+SQL injection
+XSS
+CSRF
+Unauthorized admin routes
+Role bypass
+Upload attacks
+Path traversal
+Duplicate payments
+Duplicate orders
+Installer re-entry
+
+==================================================
+50. INSTALLER TEST CASES
+==================================================
+
+Explicitly test:
+
+Fresh database installation
+
+Wrong DB password
+
+Wrong DB host
+
+Database unavailable
+
+Missing PHP extension
+
+Non-writable storage
+
+Existing tables
+
+Installation interruption
+
+Duplicate installation attempt
+
+Refreshing during installation
+
+Back button during installation
+
+Direct access to later installer steps
+
+CSRF attack
+
+Reopening /install after successful installation
+
+The installer must fail safely.
+
+==================================================
+51. PRODUCTION READINESS AUDIT
+==================================================
+
+Before considering the project complete, review:
+
+Security
+Database integrity
+Inventory integrity
+Payment calculations
+COD calculations
+Advance payments
+Courier COD amount
+Profit calculation
+RBAC
+Audit logs
+Upload security
+Error handling
+Installer lock
+Config security
+Mobile responsiveness
+SEO
+Performance
+
+==================================================
+52. FILE/FOLDER STRUCTURE
+==================================================
+
+Before development provide a recommended clean project structure.
+
+Example concept:
+
+/
+  app/
+    Controllers/
+    Models/
+    Services/
+    Middleware/
+    Helpers/
+
+  config/
+
+  database/
+    migrations/
+    seeds/
+
+  public/
+    assets/
+    uploads/
+
+  resources/
+    views/
+
+  routes/
+
+  storage/
+    cache/
+    logs/
+
+  install/
+
+  .env.example
+  .gitignore
+  .htaccess
+  index.php
+  README.md
+
+Adapt this appropriately for normal cPanel deployment.
+
+Sensitive application files should not be directly executable from the web where possible.
+
+==================================================
+53. README / DOCUMENTATION
+==================================================
+
+Provide a complete README.
+
+Include:
+
+Project overview
+Requirements
+Local installation
+cPanel installation
+Web installer guide
+Database setup
+Admin login setup
+Environment settings
+SMTP setup
+Steadfast setup
+Payment integration setup
+Security notes
+Backup instructions
+Update instructions
+Troubleshooting
+
+==================================================
+54. DEFAULT INSTALLER EXPERIENCE
+==================================================
+
+The installer should look professional.
+
+Use the same branding/design language as the admin panel.
+
+Display a progress indicator:
+
+Welcome
+→ Requirements
+→ Database
+→ Store
+→ Admin
+→ Optional Settings
+→ Install
+→ Health Check
+→ Complete
+
+Do not make the installer look like an unfinished developer tool.
+
+==================================================
+55. UPDATE / VERSION READINESS
+==================================================
+
+Structure the application so a future updater can be added.
+
+Maintain application version information.
+
+Database migrations should support future upgrades.
+
+Do NOT automatically implement an insecure self-update system.
+
+Prepare architecture only.
+
+==================================================
+56. FINAL DELIVERY
+==================================================
+
+The completed project should include:
+
+Complete source code
+Database schema/migrations
+Installer
+Admin panel
+Storefront
+Required assets
+.env.example/config example
+.htaccess
+README
+Installation instructions
+cPanel instructions
+Security configuration
+Sample/default data where appropriate
+
+Do not leave placeholder pages for core modules.
+
+Do not mark a feature complete if it is only visual.
+
+Core functionality must be connected to the actual database and business logic.
+
+==================================================
+57. DEVELOPMENT WORKFLOW — VERY IMPORTANT
+==================================================
+
+Do NOT generate the entire project in one response.
+
+Start with:
+
+PHASE 1 — UI/UX + COMPLETE FEATURE MAP
+
+Show me:
+
+1. Full storefront page list
+2. Full admin page/module list
+3. Dashboard structure
+4. Customer journey
+5. Order journey
+6. Advance payment journey
+7. Courier journey
+8. Inventory journey
+9. Accounting journey
+10. Installer journey
+11. Proposed folder architecture
+12. SEO admin screens, URL/indexing policy and acceptance-test map
+13. Reference review status: verified observations versus unavailable/pending references
+
+Then STOP.
+
+Wait for my approval before starting:
+
+PHASE 2.
+
+After my approval continue step-by-step.
+
+Never silently remove any requirement from this Master Prompt.
+
+If two requirements conflict:
+
+Explain the conflict and recommend a safe implementation before changing anything.
+
+If you think an important production feature is missing:
+
+Mention it during the planning phase instead of silently adding unnecessary complexity.
+
+The final objective is:
+
+A real production-capable Bangladesh-focused E-commerce + Mini ERP platform that can be uploaded to ordinary cPanel hosting, installed from a secure browser-based installer, configured without coding, and managed completely from a professional Admin Panel.
+
+==================================================
+REFERENCE REGISTER — USER-SUPPLIED UI/UX INSPIRATION
+==================================================
+
+Review attempted: 2026-10-06.
+All ten Facebook share links failed to load through the available public retrieval method. No video content or design behavior has been verified. This does not establish that the links are deleted or broken for other viewers.
+Retain the links for review, but do not invent descriptions or copy an unseen design.
+Screenshots or uploaded clips are needed to verify the intended interactions if access remains unavailable.
+The labels and URLs are retained in the user's original sequence below; label-to-video mapping has not been inferred where placement is ambiguous.
+
+some reference — Verify
+https://www.facebook.com/share/r/1PZh6wZg8b/?mibextid=wwXIfr
+
+404
+https://www.facebook.com/share/r/1E79rpcRS1/?mibextid=wwXIfr
+
+Complete order
+https://www.facebook.com/share/r/18VRquoEHb/?mibextid=wwXIfr
+
+Navbar
+https://www.facebook.com/share/r/1DqmsMrz8K/?mibextid=wwXIfr
+
+Add to cart
+https://www.facebook.com/share/r/1EnHnksWdd/?mibextid=wwXIfr
+
+Add
+https://www.facebook.com/share/r/1F6fNbf5M1/?mibextid=wwXIfr
+
+Upload file
+https://www.facebook.com/share/r/1CRrhNDEsG/?mibextid=wwXIfr
+
+PC navigation
+https://www.facebook.com/share/r/1Eg3LCTwJQ/?mibextid=wwXIfr
+
+Add promo
+https://www.facebook.com/share/r/1PBuVWAqf6/?mibextid=wwXIfr
+
+Bug report
+https://www.facebook.com/share/r/1JSgXMgieT/?mibextid=wwXIfr
+
+During UI/UX Planning, compare any available references with the existing functional requirements. References are inspiration, not evidence of working business logic or permission to omit security, accessibility or mobile requirements.

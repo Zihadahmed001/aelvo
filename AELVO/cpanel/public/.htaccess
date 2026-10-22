@@ -1,0 +1,13 @@
+Options -Indexes
+DirectoryIndex store.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
+# Do not rewrite real scripts, assets or directories. Keep query values for
+# language/UI controls; any redirect discards them by default.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z0-9][a-z0-9/_-]{0,190})/?$ store.php?public_path=$1 [L,QSA]
+</IfModule>

@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS aelvo_customers (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(120) NOT NULL, phone VARCHAR(20) NOT NULL UNIQUE,
+ password_hash VARCHAR(255) NOT NULL, status VARCHAR(20) NOT NULL DEFAULT 'Active',
+ verified_at BIGINT UNSIGNED NOT NULL, created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS aelvo_customer_challenges (
+ id CHAR(64) PRIMARY KEY, session_hash CHAR(64) NOT NULL,
+ purpose VARCHAR(20) NOT NULL, customer_id BIGINT UNSIGNED NULL,
+ phone VARCHAR(20) NOT NULL, name VARCHAR(120) NOT NULL,
+ password_hash VARCHAR(255) NOT NULL, otp_hash VARCHAR(255) NULL,
+ attempts INT UNSIGNED NOT NULL DEFAULT 0, expires_at BIGINT UNSIGNED NOT NULL,
+ consumed_at BIGINT UNSIGNED NULL, created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY(customer_id) REFERENCES aelvo_customers(id), INDEX expiry(expires_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS aelvo_customer_orders (
+ order_id BIGINT UNSIGNED PRIMARY KEY, customer_id BIGINT UNSIGNED NOT NULL,
+ FOREIGN KEY(order_id) REFERENCES aelvo_orders(id),
+ FOREIGN KEY(customer_id) REFERENCES aelvo_customers(id), INDEX customer_orders(customer_id,order_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS aelvo_reviews (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ customer_id BIGINT UNSIGNED NOT NULL, order_item_id BIGINT UNSIGNED NOT NULL UNIQUE,
+ product_id BIGINT UNSIGNED NOT NULL, rating TINYINT UNSIGNED NOT NULL,
+ body TEXT NOT NULL, status VARCHAR(20) NOT NULL DEFAULT 'Pending',
+ reply TEXT NOT NULL, version INT UNSIGNED NOT NULL DEFAULT 1,
+ created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY(customer_id) REFERENCES aelvo_customers(id),
+ FOREIGN KEY(order_item_id) REFERENCES aelvo_order_items(id),
+ FOREIGN KEY(product_id) REFERENCES aelvo_products(id), INDEX product_reviews(product_id,status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

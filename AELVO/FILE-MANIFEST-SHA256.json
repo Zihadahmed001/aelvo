@@ -1,0 +1,1378 @@
+{
+  "snapshot": "2026-10-22",
+  "status": "cumulative-development-source-NOT-production-ready",
+  "runtime_tests": "2026-10-22: 175 PHP syntax checks; 37 offline PHP scripts incl. SQL parser passed. No PDO MySQL, real browser or provider acceptance; concurrency and real migrations NOT performed.",
+  "schema_files": 41,
+  "files": [
+    {
+      "path": "INTEGRATIONS.md",
+      "bytes": 12840,
+      "sha256": "fc3f5632371d7a468721f04140e7156e4c664ea306f3264d6cad93c9cc65c56e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12897,
+      "sha256": "d9ab64ee4045caf2cfb40c29aa61970bf22feffe249ac8ac3e905f173d6f3467"
+    },
+    {
+      "path": "RELEASE-NOTES.md",
+      "bytes": 30905,
+      "sha256": "1b07961fd5b8591230caba8118cb83afd460c985b219d1cd6039cc3b05581481"
+    },
+    {
+      "path": "START-HERE-BN.md",
+      "bytes": 6862,
+      "sha256": "74ac7ff58fbe304ee351c2015edaa3b155a94b8203c90dd4ba5ee83d0ca5eb6b"
+    },
+    {
+      "path": "cpanel/.gitignore",
+      "bytes": 19,
+      "sha256": "0f27d4224ea6eb3867980c5601f1d2956906e20cc11ea86b60dad1017522f29f"
+    },
+    {
+      "path": "cpanel/INSTALL.md",
+      "bytes": 39998,
+      "sha256": "4d359112364340625e42ba2c8fa2498672a383ea3b6596df526f99b2adf0a84c"
+    },
+    {
+      "path": "cpanel/PROGRESS.md",
+      "bytes": 64033,
+      "sha256": "016fd0a03ab4ce0ff4fd0c8fa3636cc4184724abd16767b36a0cc46d79471961"
+    },
+    {
+      "path": "cpanel/README.md",
+      "bytes": 8724,
+      "sha256": "b58b9ab6583c28116e47142ec8480fc051f64faca8ebae131239f8c3314f5931"
+    },
+    {
+      "path": "cpanel/RELEASE-MANIFEST.json",
+      "bytes": 37438,
+      "sha256": "d28d72791a5b240721a3c5481d0749f30a675823eed87e28dcdfcc2de4b33024"
+    },
+    {
+      "path": "cpanel/app/.htaccess",
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    {
+      "path": "cpanel/app/AdminView.php",
+      "bytes": 173531,
+      "sha256": "b8d98e001f6e07dbe34d9d10ac31e9655650ba68e61a0243deb53ec15b348d63"
+    },
+    {
+      "path": "cpanel/app/AdminWorkspace.php",
+      "bytes": 10557,
+      "sha256": "62c689a4591bd65696db146d7c97b68ee5ac366db81fb4b5e05da1ae58235449"
+    },
+    {
+      "path": "cpanel/app/AuditLog.php",
+      "bytes": 5284,
+      "sha256": "a49be1214f22eac890cdf254fc4650066c9b377fd43f03e00dc3dc9332126a8c"
+    },
+    {
+      "path": "cpanel/app/Catalogue.php",
+      "bytes": 17139,
+      "sha256": "a03f965b00c230c2192bbae360b9b1dc33f17de0fbabd43ea6bc77bbc8566975"
+    },
+    {
+      "path": "cpanel/app/Checkout.php",
+      "bytes": 15274,
+      "sha256": "7ed647c586309895e2d83f6465983d9e232dc3bb3eba03302539b69aba5da366"
+    },
+    {
+      "path": "cpanel/app/CmsBlocks.php",
+      "bytes": 7572,
+      "sha256": "b118e72a5932c32a61a115b6d11667c1e5fdf36f9fb664a76cb6e76a99c6cb83"
+    },
+    {
+      "path": "cpanel/app/CmsPages.php",
+      "bytes": 9082,
+      "sha256": "79468fff586984edcf9666fbc2b0a49a1602a8e13526c706c1cf5ae89e60cd1b"
+    },
+    {
+      "path": "cpanel/app/Content.php",
+      "bytes": 6196,
+      "sha256": "2c18813e7519b5a6e7c1771df07f8cb5c8d82b0c792664b7663b91786283c912"
+    },
+    {
+      "path": "cpanel/app/Coupons.php",
+      "bytes": 13515,
+      "sha256": "c9870efadf663b22528cd03e221681ecbcd5a7b09e36d1c34c8abb14ad96721d"
+    },
+    {
+      "path": "cpanel/app/Courier.php",
+      "bytes": 7497,
+      "sha256": "978b17941c603481bd3eab0403b54e2a541498b1863504c9ca05a24048d45c02"
+    },
+    {
+      "path": "cpanel/app/CourierAccounting.php",
+      "bytes": 7732,
+      "sha256": "93eec425adb6b7e9a553549d4c348036b6323d22011cb9fd877db52a0e8c5e02"
+    },
+    {
+      "path": "cpanel/app/CourierExceptions.php",
+      "bytes": 16266,
+      "sha256": "bc2a93fb117ae888494f79f42d918bc3cfcd8e8afe8c7f571872caffbcb7c1d3"
+    },
+    {
+      "path": "cpanel/app/CourierResolution.php",
+      "bytes": 8625,
+      "sha256": "8707334097da9b2cdf78cd9176e96011e2384cad54f99ae9da4a2bb925d1227a"
+    },
+    {
+      "path": "cpanel/app/CustomerAi.php",
+      "bytes": 5428,
+      "sha256": "0b10a830bb657450babbce38aff6ee4c4b802df5ae39140cc6d5693861380ad5"
+    },
+    {
+      "path": "cpanel/app/CustomerChat.php",
+      "bytes": 12847,
+      "sha256": "88a40ddcca6686b43674f3bdd10601376ca396e4c0dd6c34c8a1c57d5f9d61b6"
+    },
+    {
+      "path": "cpanel/app/Customers.php",
+      "bytes": 16317,
+      "sha256": "ffbb41ea76badb8e4acf22b62ab9de1d64582064da58699e141e48cf403868af"
+    },
+    {
+      "path": "cpanel/app/DeliveryPricing.php",
+      "bytes": 4022,
+      "sha256": "fc80d59218795a5dc782fbb76e27e0cb296a620ffa1c942b6491fb06a477c15d"
+    },
+    {
+      "path": "cpanel/app/Domain.php",
+      "bytes": 2839,
+      "sha256": "7d2d5544032831329f1f1024ae6b1abaa002ab00576c226443662f5d7ab9591c"
+    },
+    {
+      "path": "cpanel/app/Finance.php",
+      "bytes": 4171,
+      "sha256": "64afd78f8263f512d475db358193f22c53b07db849e2afc1bdfe1868b6e8959e"
+    },
+    {
+      "path": "cpanel/app/FinanceReconciliation.php",
+      "bytes": 10981,
+      "sha256": "78eb660f8ee531608ba053c46e97dd259847adc174c572032b1de2a1a5ee57ec"
+    },
+    {
+      "path": "cpanel/app/FinancialPerformance.php",
+      "bytes": 12248,
+      "sha256": "3a273620f04d92bb70a7092921112b525544c632b8aec2ad6f31ebc942174ea1"
+    },
+    {
+      "path": "cpanel/app/GatewayExceptions.php",
+      "bytes": 10143,
+      "sha256": "d26794898393396fcb73b3b896e9a0920fcdf4d02a8aa60e7ecc44f085d62686"
+    },
+    {
+      "path": "cpanel/app/GatewayPayments.php",
+      "bytes": 18497,
+      "sha256": "7dfae1cd4e2570518013e4e7e7f7a5c5bf95809910b821ec5c3e207516a08f1f"
+    },
+    {
+      "path": "cpanel/app/GatewayPayoutBatches.php",
+      "bytes": 9696,
+      "sha256": "35f317146a16f3d7e5ea8df34937251c1eda6a3e38d7e4b7a300a2b6063ff86d"
+    },
+    {
+      "path": "cpanel/app/InventoryCosting.php",
+      "bytes": 9823,
+      "sha256": "b75a2c2458320e1632dca00b9d48c40052430814e547ff55abd85aa38abf0b05"
+    },
+    {
+      "path": "cpanel/app/OrderAdmin.php",
+      "bytes": 5660,
+      "sha256": "68cb5d11654ab38b5e54af9a4d665936bd26d41ddf6a1555a24977f71555c189"
+    },
+    {
+      "path": "cpanel/app/OrderCancellationRequests.php",
+      "bytes": 9378,
+      "sha256": "82131b8f6b54d2ba01a967e6e6b5d661f7444194b260c971fdba6481c331f0a8"
+    },
+    {
+      "path": "cpanel/app/OrderTaxes.php",
+      "bytes": 1573,
+      "sha256": "0b89b71f3f35a36c43ff3eb6f50aa9eeb43d7fe717e82a5cce3f46879458fe13"
+    },
+    {
+      "path": "cpanel/app/Orders.php",
+      "bytes": 10486,
+      "sha256": "2ac35e147b40abb4846d903ce36907cf59d711db09e2ed2e5c9054ea18753d00"
+    },
+    {
+      "path": "cpanel/app/OwnerAiConsole.php",
+      "bytes": 10132,
+      "sha256": "5d44e294b3ca97ca8ecd523bc536f775dea8721d83c57f18f8076c262857b298"
+    },
+    {
+      "path": "cpanel/app/OwnerAiPolicy.php",
+      "bytes": 3072,
+      "sha256": "a1427733d70f3f8c719289586c5ba0ea4ec0b65bb18c42d164effc41d4de7cf7"
+    },
+    {
+      "path": "cpanel/app/OwnerAiService.php",
+      "bytes": 8818,
+      "sha256": "d352fe6079823dd778ffefdefbd9b81c9f584e73a38461108c01cff4716d3136"
+    },
+    {
+      "path": "cpanel/app/OwnerEmailVerification.php",
+      "bytes": 4859,
+      "sha256": "26513265f831ebc5c35b537e82a18a7c4061cb213f13c6275f12f70003d0a01a"
+    },
+    {
+      "path": "cpanel/app/OwnerMail.php",
+      "bytes": 5827,
+      "sha256": "80ffcdb7bac910ab484bff825e8901cc360e6946cb0207c1a5c337435c535b89"
+    },
+    {
+      "path": "cpanel/app/Payments.php",
+      "bytes": 10250,
+      "sha256": "85f60fe3ba3df052892c701f6d7f7b6340e02f8be9a4ae78730d8295729cef10"
+    },
+    {
+      "path": "cpanel/app/ProductDetails.php",
+      "bytes": 4524,
+      "sha256": "28884673a22ba43518ead176080ed291bd70686a7b8cfb70e721fd97f17683fb"
+    },
+    {
+      "path": "cpanel/app/PublicRoutes.php",
+      "bytes": 8788,
+      "sha256": "0e46f32db040bd76d1521932c6f3dca4e53bf9640501a83443fff4a2fd7f1eb7"
+    },
+    {
+      "path": "cpanel/app/PurchaseRegister.php",
+      "bytes": 3824,
+      "sha256": "67f131c864a93f099470c1c813e9630f1500f0660cf63f67a2aed4becf69537e"
+    },
+    {
+      "path": "cpanel/app/Purchases.php",
+      "bytes": 13164,
+      "sha256": "c9ef372f1c9d68acd952c39b2c719dd6c9761f763146f22d215824d7f523c860"
+    },
+    {
+      "path": "cpanel/app/Quarantine.php",
+      "bytes": 4200,
+      "sha256": "db8274f47438f9d37427d342491457af99f820a76b7b25040914626f9848d55f"
+    },
+    {
+      "path": "cpanel/app/RefundTaxes.php",
+      "bytes": 2769,
+      "sha256": "6c8448ca203f42b47ada3eae0f6109613054387856e9f6aec4b73b272d1abd2b"
+    },
+    {
+      "path": "cpanel/app/Reports.php",
+      "bytes": 11165,
+      "sha256": "596fa5e77f0aab3e91c5c134ae8b9df456a430c9ec80c6bd3735eff06b9b5686"
+    },
+    {
+      "path": "cpanel/app/ReturnOperations.php",
+      "bytes": 7855,
+      "sha256": "689c009b3131cb8329644ad761b67b2009c9806716ccbe1f463628d7541b42a0"
+    },
+    {
+      "path": "cpanel/app/ReturnRequests.php",
+      "bytes": 6492,
+      "sha256": "22768b84dc7d6f7fd524ccbf9cd41b5fbe251d146c3c6fbb9c982016a9324aee"
+    },
+    {
+      "path": "cpanel/app/ReturnRequestsView.php",
+      "bytes": 3316,
+      "sha256": "9bce436ac9529b7f0c537fd8700f5c693f24ed85c310ad71acac21651c23353f"
+    },
+    {
+      "path": "cpanel/app/Returns.php",
+      "bytes": 17180,
+      "sha256": "673f968dbd811c4ba8d21885d02bbb5e372bb6b631792926f11cb05ed6d0ab06"
+    },
+    {
+      "path": "cpanel/app/ReturnsView.php",
+      "bytes": 12546,
+      "sha256": "f6caa662d0ce7a531437dd3942302435c739db4be5b6cb52273590c7403d08dd"
+    },
+    {
+      "path": "cpanel/app/Reviews.php",
+      "bytes": 8971,
+      "sha256": "8dd8f7a17c8442096735cef3336a936b36445ddd7458a995fd2c29098be73f29"
+    },
+    {
+      "path": "cpanel/app/SavedBag.php",
+      "bytes": 6585,
+      "sha256": "a7cd35e4ba3a70c73dd3f866f7b3e7099008a5c93d8d07862c33ab9ee5bfdf0e"
+    },
+    {
+      "path": "cpanel/app/Schema.php",
+      "bytes": 10510,
+      "sha256": "400651521b9702146aadfb59ea90e9f9d29e07abdd0aa634b1a67baad4ab212e"
+    },
+    {
+      "path": "cpanel/app/Security.php",
+      "bytes": 3530,
+      "sha256": "730b89b558902b9c94f21ffa647edc13b709922a405bfea7a138758980abd78c"
+    },
+    {
+      "path": "cpanel/app/Seo.php",
+      "bytes": 18076,
+      "sha256": "b5d7b7ad7fc2e2b69a5a538a2b5bb37c3c3e41abed6bb05c3efc6b83a384b577"
+    },
+    {
+      "path": "cpanel/app/Settings.php",
+      "bytes": 14152,
+      "sha256": "827b8f34b39379c23dbca86ab39ae6e14705d859fd53b5989daae3644a836357"
+    },
+    {
+      "path": "cpanel/app/Sms.php",
+      "bytes": 5952,
+      "sha256": "aeb141f864233271f9e9b16a6d1f1e78a853cc77536dcd4104fc4f9007393ebd"
+    },
+    {
+      "path": "cpanel/app/SslCommerz.php",
+      "bytes": 5845,
+      "sha256": "e487144774d0a69e3fd7c378a1667e610aeb517f5b2865b90524f51c142c63f6"
+    },
+    {
+      "path": "cpanel/app/Steadfast.php",
+      "bytes": 5840,
+      "sha256": "a22b1bd30c1a8119549fcf6343dd7d757dc46f991879e8558222f486ff32993b"
+    },
+    {
+      "path": "cpanel/app/StorefrontNavigation.php",
+      "bytes": 2414,
+      "sha256": "eea06cf230c4c6231f03c99f0f9c7ac9f3b7a8a45773028149587739dabd9e41"
+    },
+    {
+      "path": "cpanel/app/SupplierRegister.php",
+      "bytes": 4196,
+      "sha256": "08d3588151f01793cdb8eb1e7b42ef066b33ed46cbfc9a7003122f9f52009697"
+    },
+    {
+      "path": "cpanel/app/Suppliers.php",
+      "bytes": 1737,
+      "sha256": "4ea4cc5d9ea39e561dc1dee718107bb11a0c77f9ffe6f50c616d3e2aa06f1684"
+    },
+    {
+      "path": "cpanel/app/Support.php",
+      "bytes": 12431,
+      "sha256": "e76909db55fa117b1b5362ef9dadac74fe5a3b85e64186f0d268770afc0f9e24"
+    },
+    {
+      "path": "cpanel/app/TaxPricing.php",
+      "bytes": 2307,
+      "sha256": "ae5f5041afb36cfe413c6ea5fb04a0c896f2cc1e4abd35993906c7b5ef6acf3f"
+    },
+    {
+      "path": "cpanel/app/Taxonomy.php",
+      "bytes": 7900,
+      "sha256": "6f858f9fe95b941629c589b8206e10b6d23027a01fa8ae96821c595c25ca9b60"
+    },
+    {
+      "path": "cpanel/app/Team.php",
+      "bytes": 4859,
+      "sha256": "29fa8f3431a6847848c7bee9884b71419679f5987fa49fcc1a96554334f2965c"
+    },
+    {
+      "path": "cpanel/app/Tracking.php",
+      "bytes": 4316,
+      "sha256": "e6240ca5b58caab9bff3267b1d04c436b7ea0a752bbd0331b2054d5922b4c364"
+    },
+    {
+      "path": "cpanel/app/UpgradeAudit.php",
+      "bytes": 7121,
+      "sha256": "c68ef6100b1609eea4e9324381d73e61506a2c802b3eb64267136fdd53ee46ec"
+    },
+    {
+      "path": "cpanel/app/Uploads.php",
+      "bytes": 8755,
+      "sha256": "309b9806b3eecf7242185453dcf57336758facb30f076dad572dd018387a53d3"
+    },
+    {
+      "path": "cpanel/app/VariantPricing.php",
+      "bytes": 2117,
+      "sha256": "d2348f4fb4a9a11944ae354d591ae83771af48f8796e33208f39e1451f18172c"
+    },
+    {
+      "path": "cpanel/app/Wishlist.php",
+      "bytes": 2092,
+      "sha256": "1d75db7c4846e7307d39eedd0c45c124c8b3a638a98ebb8547d42d78ec502494"
+    },
+    {
+      "path": "cpanel/app/bootstrap.php",
+      "bytes": 2445,
+      "sha256": "a6569bdd390bb2392b06a956167c471f6bcccd96623a33731e01c1d8ab99b561"
+    },
+    {
+      "path": "cpanel/bin/.htaccess",
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    {
+      "path": "cpanel/bin/check.php",
+      "bytes": 1448,
+      "sha256": "f59e78ff70652fe61d29b446320f87a33ec2e64b33d01e3cb51ea0e162c409a1"
+    },
+    {
+      "path": "cpanel/bin/migrate.php",
+      "bytes": 1375,
+      "sha256": "f2e0a4885efbbc60dc4d7840a5d837cb1f659a8a4a66de05376d5bf39c1a95dd"
+    },
+    {
+      "path": "cpanel/bin/prepare-install.php",
+      "bytes": 615,
+      "sha256": "11e2aa93f18e0b3d561de44c7b1d0671d38f2fd881e60e085563c6f0648e323c"
+    },
+    {
+      "path": "cpanel/config/.htaccess",
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    {
+      "path": "cpanel/config/config.example.php",
+      "bytes": 822,
+      "sha256": "538b0cbf7fb74de5ae98f474a82f869cc4233f547dc839afd537210f3aec8564"
+    },
+    {
+      "path": "cpanel/database/.htaccess",
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    {
+      "path": "cpanel/database/checkout.sql",
+      "bytes": 625,
+      "sha256": "dc49bfd3eb8786948b089e549d0cfe2e3a6209e3bb16bfbf65d38689679bede3"
+    },
+    {
+      "path": "cpanel/database/cms-pages.sql",
+      "bytes": 716,
+      "sha256": "abffd1c1a17f0905b8d727ea373010f70cf4e88eeb3cd49733923b883dec81fe"
+    },
+    {
+      "path": "cpanel/database/cms-rich-content.sql",
+      "bytes": 564,
+      "sha256": "349d3d7ae7eadfc763af2bb72316afa679e929afc38870ab08a7910f9fbdce17"
+    },
+    {
+      "path": "cpanel/database/commerce.sql",
+      "bytes": 4232,
+      "sha256": "8688b9eadda688d4eef5626b89afa42fc7220e0ada5f01a8dcd950fe05e66873"
+    },
+    {
+      "path": "cpanel/database/content.sql",
+      "bytes": 482,
+      "sha256": "4fe86319235c258d1bd4580e92d30d0c1966878a59e94aa6d527367080e1d264"
+    },
+    {
+      "path": "cpanel/database/core.sql",
+      "bytes": 1869,
+      "sha256": "d7bb78df85d67dbf5c08c2e8809d5ab4583d722c9d03d8c826c0593729e07f44"
+    },
+    {
+      "path": "cpanel/database/coupon-eligibility.sql",
+      "bytes": 1173,
+      "sha256": "ef8e8d4f827939de52469d1881cbbf14b76fcb64acad8d19c155abb1aa5d8cb0"
+    },
+    {
+      "path": "cpanel/database/coupons.sql",
+      "bytes": 947,
+      "sha256": "b32a55d6dd5fbde402c2db524665f420ac7d1e85e1fbbaa86cd807394532ecc9"
+    },
+    {
+      "path": "cpanel/database/courier-exceptions.sql",
+      "bytes": 2274,
+      "sha256": "e584c03c3012278a1246be1df6f1dd9fae9c4571f91695711a8f794875ad8d17"
+    },
+    {
+      "path": "cpanel/database/courier-resolution.sql",
+      "bytes": 1110,
+      "sha256": "35b1facfc5a00f8e8614b4057c868c6ea1bed3a9e25e6ac17ae014a929df4fba"
+    },
+    {
+      "path": "cpanel/database/courier.sql",
+      "bytes": 3423,
+      "sha256": "1b6a855c3cc4a105d5c1a193296d6cfd614f46ba695ce3a214921bf8e91f26c2"
+    },
+    {
+      "path": "cpanel/database/customer-chat.sql",
+      "bytes": 1972,
+      "sha256": "47d47ea88280266b7daf0dc1edf5584f4de25cd79929aa30e97f00664e94b962"
+    },
+    {
+      "path": "cpanel/database/customer-engagement.sql",
+      "bytes": 3429,
+      "sha256": "54337c30f51cd4312e033600f17dc10b947938deb28348efdfb17afbcb297803"
+    },
+    {
+      "path": "cpanel/database/customer-tools.sql",
+      "bytes": 823,
+      "sha256": "785b79056e3564c9b9452db2208d44da3cdfde6b09a6744d36db32389e834b89"
+    },
+    {
+      "path": "cpanel/database/customers.sql",
+      "bytes": 1990,
+      "sha256": "463084774c5453c006e357f50f7550d327fae404931664e2ead2931a1151d560"
+    },
+    {
+      "path": "cpanel/database/finance.sql",
+      "bytes": 2087,
+      "sha256": "18de46415e7aa720d4c23cc68386adcbee2f3d5525922f2d15cff087ffd5d070"
+    },
+    {
+      "path": "cpanel/database/gateway-exceptions.sql",
+      "bytes": 1334,
+      "sha256": "37d4abda3b4804bb2581a12147f4c65dd34ebaa7c13b4a9da0e16a1e7cdcd430"
+    },
+    {
+      "path": "cpanel/database/gateway-payout-batches.sql",
+      "bytes": 1476,
+      "sha256": "08bc05bc44aa58fbbbe9d57660c3a04fef7051880474a988988b55a861370d19"
+    },
+    {
+      "path": "cpanel/database/gateway.sql",
+      "bytes": 2355,
+      "sha256": "9a99f7a1c5ac1ed0dbf5e00acce44e1ec1c031d093be9068115f0dab06276b44"
+    },
+    {
+      "path": "cpanel/database/inventory-costing.sql",
+      "bytes": 2948,
+      "sha256": "8cd072b6f153eee20abd08072f836c82e51848d535e92be78b9d1ee62112d289"
+    },
+    {
+      "path": "cpanel/database/inventory-quarantine.sql",
+      "bytes": 1409,
+      "sha256": "53b86b056605eecb6e6fc8ba3842e61c72afb281ad97bc3da1c9cda5a797b74f"
+    },
+    {
+      "path": "cpanel/database/order-cancellations.sql",
+      "bytes": 1694,
+      "sha256": "99f01e226bc61df97b575565622e7e4959e03fbd4e1bdb2cc68f11b343755333"
+    },
+    {
+      "path": "cpanel/database/order-tax.sql",
+      "bytes": 726,
+      "sha256": "717cb22ee0b7b7cdb578c71b81b63a177e9466eab668511471fb409306f22d96"
+    },
+    {
+      "path": "cpanel/database/owner-ai.sql",
+      "bytes": 1142,
+      "sha256": "8eb94cfbb43e798ffb8792965a12aad33831d81d3e7e6446263097422e23407d"
+    },
+    {
+      "path": "cpanel/database/owner-email-verification.sql",
+      "bytes": 608,
+      "sha256": "88e2e1dcf920108f459959f2029492b3376759253c0f633928c7741f38d46118"
+    },
+    {
+      "path": "cpanel/database/payments.sql",
+      "bytes": 1413,
+      "sha256": "852e51c393e6fd877687a315921f2527d0f0287db00fe0430a3a8e8980a2c411"
+    },
+    {
+      "path": "cpanel/database/product-details.sql",
+      "bytes": 1022,
+      "sha256": "eacf51636e4af3c607186257c5940cc2d659608e316be5aadbdd6bbddbba49c1"
+    },
+    {
+      "path": "cpanel/database/product-merchandising.sql",
+      "bytes": 716,
+      "sha256": "e8784f5a7cd3eb769285db6a2c0b56379c7258c02fd7237b90011ae7ee2ddc71"
+    },
+    {
+      "path": "cpanel/database/refund-review.sql",
+      "bytes": 1648,
+      "sha256": "57720563ef04464c0c7f6ee88bc0e498ba2db5b0bd6dbd1f0ad8bcb84e36621b"
+    },
+    {
+      "path": "cpanel/database/refund-tax-allocation.sql",
+      "bytes": 522,
+      "sha256": "f924193da3f4d35d095230141e00ef5d386472bbc3a7ef8bc04961406015ec48"
+    },
+    {
+      "path": "cpanel/database/returns.sql",
+      "bytes": 1045,
+      "sha256": "4b7855268c48afc0766eb8feea7b0e890a505aeb03d2e0bcae054dad391d7106"
+    },
+    {
+      "path": "cpanel/database/seo-entities.sql",
+      "bytes": 1686,
+      "sha256": "fe5d3297a012fac7f1f65b7e3dc9de08cca893dd04731b7a61f540d68868cd85"
+    },
+    {
+      "path": "cpanel/database/seo-errors.sql",
+      "bytes": 669,
+      "sha256": "dfe5c36ed799942d4843b702f3caa557f464176980a10926dea5e926153d9a76"
+    },
+    {
+      "path": "cpanel/database/seo-routes.sql",
+      "bytes": 1313,
+      "sha256": "7e62c2f5833439bf09603aae44c97f8e434bf73913c05daedf5ca931d82b5861"
+    },
+    {
+      "path": "cpanel/database/staff-sessions.sql",
+      "bytes": 406,
+      "sha256": "b07b302b75f91afa5fa895e0ac659df7e6ae74fe789c9c1f77c4cdac2ee8f83a"
+    },
+    {
+      "path": "cpanel/database/supplier-operations.sql",
+      "bytes": 3054,
+      "sha256": "5389f32f431c2508b08df1eec23ef1186680039240b9885712b3e38c95c42ca4"
+    },
+    {
+      "path": "cpanel/database/support-inbox.sql",
+      "bytes": 2021,
+      "sha256": "e8a955b9e0fbddc934a397985c6a01d94148752f224226678a59256eb34a172e"
+    },
+    {
+      "path": "cpanel/database/support-public-updates.sql",
+      "bytes": 650,
+      "sha256": "4b2682ad966618171c498aaece2c04338a93a05bc862925867bbd522682bc2ed"
+    },
+    {
+      "path": "cpanel/database/taxonomy-seo.sql",
+      "bytes": 4485,
+      "sha256": "e86a4e0b487ab702191e5f2a1739ac0c13096cac0ab8f5928daf9bbfbfff990b"
+    },
+    {
+      "path": "cpanel/database/tracking.sql",
+      "bytes": 890,
+      "sha256": "fb2b64c1fe28c7e4ee7578443b0c8a05f616dd2a176e938f6fb470946dfa5556"
+    },
+    {
+      "path": "cpanel/database/variant-pricing.sql",
+      "bytes": 356,
+      "sha256": "b47cc45888f9bfbae1c1c8fc907b2c2b3a04de6d08cc620ff83df2020633f02b"
+    },
+    {
+      "path": "cpanel/public/.htaccess",
+      "bytes": 470,
+      "sha256": "36ba2e0c369b986cb2f3a5ec62fea3187c629622409f8754aa8b3087e15f6803"
+    },
+    {
+      "path": "cpanel/public/account-view.php",
+      "bytes": 14166,
+      "sha256": "074c26354103b49aee21ce3285f315376da7d70926a6d2660e88c822455a9bff"
+    },
+    {
+      "path": "cpanel/public/addresses-view.php",
+      "bytes": 3507,
+      "sha256": "c85049d43aee3e4a22ebbdecf29243f102aa88c90f4846770f9c2bb819b7db0b"
+    },
+    {
+      "path": "cpanel/public/admin-chat-view.php",
+      "bytes": 2796,
+      "sha256": "216353da2441d64b971a703374e1f0331fb100e274bb2514473f242e1ea820c0"
+    },
+    {
+      "path": "cpanel/public/admin-mobile.js",
+      "bytes": 1791,
+      "sha256": "2b31e3d921b232b6b7169680c732aa6a879e5270b21490dc52ecedd9944b5944"
+    },
+    {
+      "path": "cpanel/public/assets/bag.png",
+      "bytes": 2522166,
+      "sha256": "6b8b247da6004d98c2cc700d3805c811a82fd5ee3c461debd4eafe000e261591"
+    },
+    {
+      "path": "cpanel/public/assets/placeholder.svg",
+      "bytes": 351,
+      "sha256": "9d7012f247dfa07e7a293974606f9c3cd33ba72c2cbc0f155920a703ec542122"
+    },
+    {
+      "path": "cpanel/public/assets/shoe.png",
+      "bytes": 2098581,
+      "sha256": "c6c8ae4606a3a1e119ce6d954eec2bee43281e21d3a94092913a37dd27fb3e73"
+    },
+    {
+      "path": "cpanel/public/assets/styles.css",
+      "bytes": 57781,
+      "sha256": "816aa1848f7479c7078e6fcbece80a05dbfd646e3f2ee36a904e9e0a95c6551d"
+    },
+    {
+      "path": "cpanel/public/audit-export.php",
+      "bytes": 1268,
+      "sha256": "37b135cc69adec67ef460e0cf5e7d164a34bf71b688b9abc0781ed4b912241bb"
+    },
+    {
+      "path": "cpanel/public/backend.css",
+      "bytes": 22973,
+      "sha256": "b5b44eea7d38a57b3baa4455aabf68aa92627ada341f10867ac675f2480ecfa7"
+    },
+    {
+      "path": "cpanel/public/bag-checkout-view.php",
+      "bytes": 11064,
+      "sha256": "fed5cf88fbef99984bf96611d2ba55cb92e749aa03a9321d327ba6a2a013b1a4"
+    },
+    {
+      "path": "cpanel/public/catalogue.php",
+      "bytes": 379,
+      "sha256": "3ad452623dfa8c46fa51c0af32bb1686aa3c6b289b7300da184ac106efbe5d28"
+    },
+    {
+      "path": "cpanel/public/chat-view.php",
+      "bytes": 5039,
+      "sha256": "305e20890830d60a7f106485594b8cdd71168a2ef1da756b2b31a91a94dba2c5"
+    },
+    {
+      "path": "cpanel/public/checkout-view.php",
+      "bytes": 7012,
+      "sha256": "39f66e1e216e339cd0593fc7a4a3b98596aa8137eff4cb497f7aee58aa75bbc7"
+    },
+    {
+      "path": "cpanel/public/cms-blocks.js",
+      "bytes": 1784,
+      "sha256": "7bdc13a87675153b89f755e64cfd94bf336f5410aaa15327df01f15d637ed68c"
+    },
+    {
+      "path": "cpanel/public/cms-preview.php",
+      "bytes": 2381,
+      "sha256": "8b55da4903aab9525e4ded2563b9f8905e46faf1ccb9166fcca16786b264ac0d"
+    },
+    {
+      "path": "cpanel/public/content-view.php",
+      "bytes": 2300,
+      "sha256": "7c4b68b7ef9f43d7d9b95ae5ee483c9e8a2fb292cd939506af54e01540c76140"
+    },
+    {
+      "path": "cpanel/public/customer.css",
+      "bytes": 26727,
+      "sha256": "8f7d31cbcd5d818dfe013726e271444756da9cbf5e69b4ef2d04921aa55388bc"
+    },
+    {
+      "path": "cpanel/public/document.php",
+      "bytes": 3546,
+      "sha256": "7d767ee40fb98dd49ba27dd86ff3b8c0dc97596a9c6d5ba46d155329c71cd10d"
+    },
+    {
+      "path": "cpanel/public/filters-view.php",
+      "bytes": 3409,
+      "sha256": "9d713746e011137ce5b62c2304652ae2b18613c77faee73fe5642fb835317364"
+    },
+    {
+      "path": "cpanel/public/financial-performance-export.php",
+      "bytes": 3612,
+      "sha256": "9a178afeccf4e2d58fb0ae5b4bb13fcb39fa6bfc4a30f3856c4b1ec7715bcf97"
+    },
+    {
+      "path": "cpanel/public/gateway-ipn.php",
+      "bytes": 997,
+      "sha256": "838d7bd04d5801c1b2f7fbf341667a23142f5bd75cea19989365eb53714e0971"
+    },
+    {
+      "path": "cpanel/public/gateway-return.php",
+      "bytes": 996,
+      "sha256": "a5c1291f616babc6bb30c2372d43aba5de8751891e61da885344eddaac1cccf1"
+    },
+    {
+      "path": "cpanel/public/gateway.php",
+      "bytes": 1670,
+      "sha256": "97068974c0a4e29ab0328deb3a7adafe7496b120dcc7a32ded5a04c79104832b"
+    },
+    {
+      "path": "cpanel/public/index.php",
+      "bytes": 24928,
+      "sha256": "54fb22ec92e4e8ad56954bf1c35e8941c447db523cb03d7471260f6e6123e562"
+    },
+    {
+      "path": "cpanel/public/media.php",
+      "bytes": 2809,
+      "sha256": "b2ea3ffd05eb1aa2e0555b98062dd7962edf64c89738e6078cd4bf764a5d6063"
+    },
+    {
+      "path": "cpanel/public/navigation-view.php",
+      "bytes": 1544,
+      "sha256": "12fd3819918a831bc3538b5c34048f92472a31084dd3016d2e38448106e9f3ab"
+    },
+    {
+      "path": "cpanel/public/not-found-view.php",
+      "bytes": 2328,
+      "sha256": "752c9aedc84382c6a09910102ed7d05b5fd1e8b21e36826e238ef868956b7c9d"
+    },
+    {
+      "path": "cpanel/public/order-summary.php",
+      "bytes": 5764,
+      "sha256": "3d01a639ae0a8e55a5ec43a26679e5fddae3d7e3ba06af24ecb9d2cc9cdc2be2"
+    },
+    {
+      "path": "cpanel/public/pagination-view.php",
+      "bytes": 682,
+      "sha256": "a2bba7e252f5c2a79c2a1e3f330fd517dcda8f63f876b7255116461dbc31ab8c"
+    },
+    {
+      "path": "cpanel/public/payment-proof-view.php",
+      "bytes": 3461,
+      "sha256": "ffd9f63269e5a251b44fd064f146baf37ad72a12528070c04a01f1308c72a24d"
+    },
+    {
+      "path": "cpanel/public/popup-view.php",
+      "bytes": 845,
+      "sha256": "b03ad938e082c2456645de70995aa3703e795a01f085e003dfb5cb4827a52adb"
+    },
+    {
+      "path": "cpanel/public/product-card-view.php",
+      "bytes": 2079,
+      "sha256": "782cddc2446981ec76d1a315d1af87cd00c43bfb98460c098ad351ab7bf93cf7"
+    },
+    {
+      "path": "cpanel/public/product-facts-view.php",
+      "bytes": 1531,
+      "sha256": "52a60c7449b2441530f6c9d0c770c14d09ba2d55b24b149d4f44d03cfb94f01d"
+    },
+    {
+      "path": "cpanel/public/product-gallery-view.php",
+      "bytes": 1808,
+      "sha256": "78c4d57ae1456c30d027fee2a09da6991569abdbaa529465f9aa4b9353a582a0"
+    },
+    {
+      "path": "cpanel/public/profile-view.php",
+      "bytes": 1638,
+      "sha256": "433ce42803306cf9acc3eff1685aac937eae78797c842fabe9c1905ee06819f5"
+    },
+    {
+      "path": "cpanel/public/proof.php",
+      "bytes": 1029,
+      "sha256": "db441b2f5abe7446bd778a514b0d4bb6e05fe7991a0612dea4bcdcd797ee5335"
+    },
+    {
+      "path": "cpanel/public/purchase-summary.php",
+      "bytes": 5769,
+      "sha256": "cc504c3285c7d2278464b1aea0928f64fd42fe46c400482c27a12accebf4bbf6"
+    },
+    {
+      "path": "cpanel/public/reconciliation-export.php",
+      "bytes": 3190,
+      "sha256": "2f6a797d146654201a07f41308b4c81f014174d26ebbcc9062994d061d520f27"
+    },
+    {
+      "path": "cpanel/public/report-export.php",
+      "bytes": 1265,
+      "sha256": "a42f43034337d357bf3a8cd9b630123fc0aa5ac7b0cca286b6d02df1ed1bc439"
+    },
+    {
+      "path": "cpanel/public/return-evidence.php",
+      "bytes": 1211,
+      "sha256": "e6e3efbabcfc255b1aa5338bcfaada9d483f4a82802c384b2de559da85c2144d"
+    },
+    {
+      "path": "cpanel/public/return-request-form.php",
+      "bytes": 1518,
+      "sha256": "90dd0a10aeef070b1f57eba07b0fb0481f247055768b60c3481480959b64ebff"
+    },
+    {
+      "path": "cpanel/public/return-requests-view.php",
+      "bytes": 1115,
+      "sha256": "d012e38131516c1254e802e0fea0eab814485470e6af6bd2eefd039efbe01bb1"
+    },
+    {
+      "path": "cpanel/public/review-photo.php",
+      "bytes": 1303,
+      "sha256": "2df65b0468468765cf3400b307e7518e9551f96c0be0396f835366369c6921ee"
+    },
+    {
+      "path": "cpanel/public/reviews-view.php",
+      "bytes": 3568,
+      "sha256": "2d8cdce290f88ead9097456a8afc0dd383ad61a76c24ab6ff93d251d42c28070"
+    },
+    {
+      "path": "cpanel/public/robots.php",
+      "bytes": 586,
+      "sha256": "d761af73684adcc5a78192cbdfee80b402ad0fa476ba732dfbded88b2234b781"
+    },
+    {
+      "path": "cpanel/public/schema-status.php",
+      "bytes": 2080,
+      "sha256": "2e3ece23ae5096f2cdeb915f0ead6cfee14a2ece75976e60bb6f83e4ecd6922d"
+    },
+    {
+      "path": "cpanel/public/search-view.php",
+      "bytes": 817,
+      "sha256": "1b050b58454416b0a131248b370eca731828688582a198e6848f3354f00ee606"
+    },
+    {
+      "path": "cpanel/public/search.php",
+      "bytes": 838,
+      "sha256": "ae1176b841ff7695c71d821cf3c3ae0b78a1978806ee2db277cad15255fa7ba7"
+    },
+    {
+      "path": "cpanel/public/setup.php",
+      "bytes": 5579,
+      "sha256": "24bdc91a3e6d8ee8e3998a85dc2868a5f4b46350aa0bfd89c282da0868373b4a"
+    },
+    {
+      "path": "cpanel/public/sitemap.php",
+      "bytes": 4087,
+      "sha256": "2b393b5f88b3df9912311c5c3900fdb294b6da196c2d47c6c5ca5a0a8e7a900d"
+    },
+    {
+      "path": "cpanel/public/store.js",
+      "bytes": 9520,
+      "sha256": "860c7f86e69eea19575a569d25f8e4db0592d41817cd014dfcf07930a589e7b8"
+    },
+    {
+      "path": "cpanel/public/store.php",
+      "bytes": 33620,
+      "sha256": "40544518bd4637eddca5722b20b198c6e7924f8d11ffadcfb560e811ab045a8c"
+    },
+    {
+      "path": "cpanel/public/storefront-collections-view.php",
+      "bytes": 1397,
+      "sha256": "a1e4decdd523a38004e8cb3da120abbd4ed5ef51d33b120c225d52c3307b143b"
+    },
+    {
+      "path": "cpanel/public/storefront-footer-view.php",
+      "bytes": 3309,
+      "sha256": "759e1f97a7c800a34a3be8def22a2e62e8b29047cd0c787995bab268dd224dee"
+    },
+    {
+      "path": "cpanel/public/storefront-header-view.php",
+      "bytes": 3202,
+      "sha256": "277714562ff92b663c5bce5341b1b3ae927e97bf0e45a63f50b9388d0af0a317"
+    },
+    {
+      "path": "cpanel/public/storefront-home-view.php",
+      "bytes": 3498,
+      "sha256": "260c2ff99715c51267a46f6c2bb00c6ef643057ba9b57a7d5026dcce4f88f2c7"
+    },
+    {
+      "path": "cpanel/public/support-attachment.php",
+      "bytes": 1162,
+      "sha256": "eed1a97d35bb19a391cfa2b59df6f26ddc4b2d18badb0acdf32ff14636793873"
+    },
+    {
+      "path": "cpanel/public/support-view.php",
+      "bytes": 6970,
+      "sha256": "e91210b6698bafb1c0f9ee4223ba7bae77ae56395e0fce35edaf4d2a8a065d7a"
+    },
+    {
+      "path": "cpanel/public/theme.php",
+      "bytes": 1232,
+      "sha256": "663b19fe61dd4a8f2e95fcdb291e8c29fd8381dc09a83c873f8b00b64bbaa0ab"
+    },
+    {
+      "path": "cpanel/public/tracking-view.php",
+      "bytes": 3292,
+      "sha256": "0b81179bc60119540b6f146e04f534794fde0e3b526f99b7d477b60b668f2713"
+    },
+    {
+      "path": "cpanel/public/upgrade-review.php",
+      "bytes": 5601,
+      "sha256": "573bccd94997093c7e5072ded506664f386064f75e9701e71be911b27a713445"
+    },
+    {
+      "path": "cpanel/public/variant-picker-view.php",
+      "bytes": 3202,
+      "sha256": "0541b31efab074b0bdc54ad7cc4d5b00b0995ee92f7572c460740cc3d9ea5fb5"
+    },
+    {
+      "path": "cpanel/public/wishlist-view.php",
+      "bytes": 1334,
+      "sha256": "f9a0a72d5d92956bb04b3d56365449aff129d5aa72d7f8e52e49c13904e1faa7"
+    },
+    {
+      "path": "cpanel/tests/.htaccess",
+      "bytes": 19,
+      "sha256": "fa28d421a28ed9b6f4b997d5119c2b8adbacff6e2dd119a179b71230f9664934"
+    },
+    {
+      "path": "cpanel/tests/admin-audit-purchases-offline.php",
+      "bytes": 6058,
+      "sha256": "b2d934affbbee1e94791b0253f2f2bab39af0a7abf4d076e6992157eb774d64f"
+    },
+    {
+      "path": "cpanel/tests/admin-navigation-offline.php",
+      "bytes": 4260,
+      "sha256": "003a55cc90c7e4d53a6b10a2d400ae20a1ec6ea19abdc2fb77f5bf2400e4dc13"
+    },
+    {
+      "path": "cpanel/tests/admin-workspace-offline.php",
+      "bytes": 7840,
+      "sha256": "7834720924c0dc0eabb6633eaa009e44140eacfbbfa72433bf9b71e6236addf2"
+    },
+    {
+      "path": "cpanel/tests/bag-quantity-offline.php",
+      "bytes": 726,
+      "sha256": "ea1b34bd165cebecc9dc6ae5a443afcb7811a47905a80e076519472d752c8540"
+    },
+    {
+      "path": "cpanel/tests/bag-view-offline.php",
+      "bytes": 2426,
+      "sha256": "df3e5d21b0a7479c5765eceb19d9eaf30e85daaf01f12e243ba7e0a0258635a3"
+    },
+    {
+      "path": "cpanel/tests/checkout.php",
+      "bytes": 6210,
+      "sha256": "3d8d8ab1dc0d9b64853e3bdd00446c17bd6993eae051bdc9b305c431e76cdd55"
+    },
+    {
+      "path": "cpanel/tests/cms-blocks.php",
+      "bytes": 3487,
+      "sha256": "47e30d6c461cbfd8ae99d7ae310bb09f0f9038d665d88553a105d08b7f27066b"
+    },
+    {
+      "path": "cpanel/tests/cms-pages.php",
+      "bytes": 1970,
+      "sha256": "9d792b493e0dc8542b163240d07550882543d2d9ad8069299fa22593ac1a33fa"
+    },
+    {
+      "path": "cpanel/tests/courier-accounting-offline.php",
+      "bytes": 1028,
+      "sha256": "b040aaef311d4b5848a810db2f323ffbb244d3feee3767ed4352bf8ede1468ce"
+    },
+    {
+      "path": "cpanel/tests/courier-exceptions-offline.php",
+      "bytes": 4716,
+      "sha256": "923c360ef504270bef4fc854433d262093b4befc07d31e87d7aea80cf8c07228"
+    },
+    {
+      "path": "cpanel/tests/courier-offline.php",
+      "bytes": 2337,
+      "sha256": "cdc8d2062c3f3c0a65feeb933515f879aac3d816c424ddd727c13e624bce5e01"
+    },
+    {
+      "path": "cpanel/tests/courier-resolution-offline.php",
+      "bytes": 3876,
+      "sha256": "5898730fe2073051a0995bd124e2dbe3c19903b61fcfdb3c0d35f82fc6897308"
+    },
+    {
+      "path": "cpanel/tests/customer-chat-offline.php",
+      "bytes": 3495,
+      "sha256": "0adc19e1d914d8116068f6c45afdc0124e99a8d1e940618203f72acc1f6838e6"
+    },
+    {
+      "path": "cpanel/tests/customer-content.php",
+      "bytes": 11422,
+      "sha256": "eeb6f6e996527a4b3baa33edcf7602787b48859dd1d4ca642fe14fefd4ebfa54"
+    },
+    {
+      "path": "cpanel/tests/database.php",
+      "bytes": 2659,
+      "sha256": "e65681e0c2b53b95845515f64f187848e87b640a433abe0e68ff4f2736b5716b"
+    },
+    {
+      "path": "cpanel/tests/delivery-pricing-offline.php",
+      "bytes": 4265,
+      "sha256": "9d0d72b370e5d86303c2d5be5b220a7b7d7139c8016039ca48dcd233af98ff7b"
+    },
+    {
+      "path": "cpanel/tests/finance-reconciliation-offline.php",
+      "bytes": 2307,
+      "sha256": "d8e9bf45e3eaa382cb770893a7eb72c33b6aaeceae6a982b327a3ff11bce7b81"
+    },
+    {
+      "path": "cpanel/tests/financial-performance-offline.php",
+      "bytes": 3821,
+      "sha256": "82e53d8dc9036f2c9b84587227de12ff58f1580a09f41b3d42892ae19040502c"
+    },
+    {
+      "path": "cpanel/tests/gateway-exceptions-offline.php",
+      "bytes": 4231,
+      "sha256": "3bee66e2d41b498a897fa69f0ee8709549afb2db20d2413a93d343bbb92ea829"
+    },
+    {
+      "path": "cpanel/tests/gateway-offline.php",
+      "bytes": 4557,
+      "sha256": "0fce9398cd805eeaa91db753a9f99cdf1d83de777f0fece4f5e1db255ed4890c"
+    },
+    {
+      "path": "cpanel/tests/gateway-order-guard-offline.php",
+      "bytes": 4265,
+      "sha256": "c2c7bfc2be5c1f789eb36bc79b7d5a90c0ae3e9a34c4a07529ee87718fcaa6ec"
+    },
+    {
+      "path": "cpanel/tests/gateway-payout-batches-offline.php",
+      "bytes": 4164,
+      "sha256": "194d9ad73213fb22f88a4a83e30e2279920a878a229cfbfe0ad8867434774a5a"
+    },
+    {
+      "path": "cpanel/tests/home-footer-parity-offline.php",
+      "bytes": 4405,
+      "sha256": "a832fd2fe973001d75da165355c15e75be364863428f72cb9be1682bccdb9039"
+    },
+    {
+      "path": "cpanel/tests/inventory-costing-offline.php",
+      "bytes": 1673,
+      "sha256": "c50b0953921a6ec306754ed5ef3c747579290038c3b5364012d47734e4493c36"
+    },
+    {
+      "path": "cpanel/tests/migration-ledger-offline.php",
+      "bytes": 2665,
+      "sha256": "fff0a156ff92460eea5040eb6e707dd03071cb2d5ce536a9a001b14aa97ed4a8"
+    },
+    {
+      "path": "cpanel/tests/order-admin-offline.php",
+      "bytes": 2148,
+      "sha256": "1053e7e0a756ceec2d026aec97da3341fdda4573a0542e287ae65344c80b883c"
+    },
+    {
+      "path": "cpanel/tests/order-cancellations-offline.php",
+      "bytes": 3568,
+      "sha256": "5c0060689ac4d13b75a5ef8d39977567c52d4bae53ec7fe65e77de4564048873"
+    },
+    {
+      "path": "cpanel/tests/owner-ai-offline.php",
+      "bytes": 2865,
+      "sha256": "61feb7f562ac6e3caa977096959a333831277736b95c0c6af07f375373b8977e"
+    },
+    {
+      "path": "cpanel/tests/policy.php",
+      "bytes": 1988,
+      "sha256": "d33422d09070469738b91ff0328c46af5a3e6d67538e6532246ff40517841259"
+    },
+    {
+      "path": "cpanel/tests/product-details-offline.php",
+      "bytes": 4558,
+      "sha256": "2e5cf79b694e4c0b527bf9088bc42b88e387bca786ec2ba805fb7d8045fede32"
+    },
+    {
+      "path": "cpanel/tests/product-merchandising-offline.php",
+      "bytes": 4615,
+      "sha256": "5695033ccd21190800f14d0bb8eba9ac60d5b7df7e95ffe59bd54fcf3a6225ef"
+    },
+    {
+      "path": "cpanel/tests/promotion-engine-offline.php",
+      "bytes": 4560,
+      "sha256": "db258ab17eb1fd3d4269794b1dbdeed0066ec34ef28f0f694b21fb4e70c32e47"
+    },
+    {
+      "path": "cpanel/tests/refund-tax-offline.php",
+      "bytes": 2158,
+      "sha256": "3c9d92890cf0045d246342766871a2a68235dd0c589bd1e55f4c844da8e17885"
+    },
+    {
+      "path": "cpanel/tests/returns-queues-offline.php",
+      "bytes": 6128,
+      "sha256": "a02927a2ec024cebac53e512c42f75dc15b214a50f584ec84cf23cfccf0d6d33"
+    },
+    {
+      "path": "cpanel/tests/reviews-workspace-offline.php",
+      "bytes": 2371,
+      "sha256": "43121f20c5b05b1d065181483bbcfc9ea35bb84abb26e76ea04f40ec8fe204fa"
+    },
+    {
+      "path": "cpanel/tests/seo-routes.php",
+      "bytes": 2778,
+      "sha256": "a8d890b7713f23d32f68b5a7c7e2c119284c25f6ff71212be739fda3266f55f2"
+    },
+    {
+      "path": "cpanel/tests/sms-adapter.php",
+      "bytes": 1148,
+      "sha256": "6d1390bc42659b85389510384b2fe038cb3f293ddd6ef5c505a49a0bd16c3475"
+    },
+    {
+      "path": "cpanel/tests/sql-parser.php",
+      "bytes": 806,
+      "sha256": "be80364f64ec9debd9f2bee856e62d37b19b0a8346fc8e6ee500829975bc7f63"
+    },
+    {
+      "path": "cpanel/tests/staff-lines.php",
+      "bytes": 1569,
+      "sha256": "7b63eff9738aebef84882f0fa14f2d09dbb40e46406d59bd708811f5fc5cfb5e"
+    },
+    {
+      "path": "cpanel/tests/staff-support-offline.php",
+      "bytes": 3385,
+      "sha256": "d5b646d4989a1ae33a11df6dcb9ccac44a0c8994f52b58b60f4863a31db86590"
+    },
+    {
+      "path": "cpanel/tests/storefront-navigation-offline.php",
+      "bytes": 5099,
+      "sha256": "60b5dd2dd0e5d66e3dea17eb9b648297d75021932c2655ca6c50b300e0a1f295"
+    },
+    {
+      "path": "cpanel/tests/supplier-register-offline.php",
+      "bytes": 4508,
+      "sha256": "fbce9b663e135d9017daa7eddec50363e2898fa77115d2fd57072e7d43c48f2f"
+    },
+    {
+      "path": "cpanel/tests/support-reports.php",
+      "bytes": 2878,
+      "sha256": "e5bdb48b83b04d800d3a23194343f00234b51ec0c3ca7fca389add22dd6cb181"
+    },
+    {
+      "path": "cpanel/tests/tax-pricing-offline.php",
+      "bytes": 2956,
+      "sha256": "05ba4e251f6f69f6e7e367f05b46db8fb42a5900e5036b172f803c6c365aa9ce"
+    },
+    {
+      "path": "cpanel/tests/upgrade-review-offline.php",
+      "bytes": 4675,
+      "sha256": "b969dc9c7c9d02cb2739da0e6add9e2c597e23121f8ab8db949c1762af85c8ac"
+    },
+    {
+      "path": "cpanel/tests/variant-picker-offline.php",
+      "bytes": 1428,
+      "sha256": "52072c561372ab4c9b5ce9d7fafb084d5f34df40113fa90e51db0fcc5ef07019"
+    },
+    {
+      "path": "cpanel/tests/variant-pricing-offline.php",
+      "bytes": 4336,
+      "sha256": "4891f6094d0683228746ae21b5e0d7913e0430e86d0724b9020bafe9b108bece"
+    },
+    {
+      "path": "dist/assets/access.js",
+      "bytes": 1644,
+      "sha256": "32058f90db258e24a8187cdcdcbab8bd60301ca8eb0950bf03e020c8daa72e66"
+    },
+    {
+      "path": "dist/assets/admin.js",
+      "bytes": 35698,
+      "sha256": "39c564c3d6fd7cea1612309fee4c920aca52e6269450834b3ea8bd270bbe960b"
+    },
+    {
+      "path": "dist/assets/app.js",
+      "bytes": 74679,
+      "sha256": "fa025a1419f4b222e16f3c29667ea6ad8b543f29269e32ce8a38c8c6fa886c98"
+    },
+    {
+      "path": "dist/assets/bag.png",
+      "bytes": 2522166,
+      "sha256": "6b8b247da6004d98c2cc700d3805c811a82fd5ee3c461debd4eafe000e261591"
+    },
+    {
+      "path": "dist/assets/commerce.js",
+      "bytes": 14386,
+      "sha256": "fcd848276448a6aa69efc864a58e783a781b3e4fca7b319bbec8d20d2ec7f494"
+    },
+    {
+      "path": "dist/assets/configuration.js",
+      "bytes": 25901,
+      "sha256": "43a67de5628f103fff78cf4c65ea7afd475231e495d30e0b7194694d38bb1774"
+    },
+    {
+      "path": "dist/assets/core.js",
+      "bytes": 4268,
+      "sha256": "a3588c9219f2a30630cc827e6603f53b26c557f66da0d12cfda15a893638c94e"
+    },
+    {
+      "path": "dist/assets/data.js",
+      "bytes": 9007,
+      "sha256": "20705fb35f07ae5a05e930cb64da55f14c2c174d37ab64ea20637284ee6d4066"
+    },
+    {
+      "path": "dist/assets/editors.js",
+      "bytes": 12566,
+      "sha256": "38b6c1072e9db4b7b5e8f9d1b132ca9d489d0c05b7cc110ef14cb7c42953ea20"
+    },
+    {
+      "path": "dist/assets/engagement.js",
+      "bytes": 16349,
+      "sha256": "cdf2aa72e051c3524728e7fca7f125072ff9073d6f8a93db80a14f25994580e0"
+    },
+    {
+      "path": "dist/assets/i18n.js",
+      "bytes": 31810,
+      "sha256": "91ba45a9ac974cf5740e1fb2b3f39154174cb0304a2d1ff4afec2b3c36879b07"
+    },
+    {
+      "path": "dist/assets/management.js",
+      "bytes": 3727,
+      "sha256": "d54cbc0d2c9217f8b9f28d44e5f801c2d74708c8640400879a58419f08a4bb60"
+    },
+    {
+      "path": "dist/assets/product-placeholder.svg",
+      "bytes": 445,
+      "sha256": "51e4e2d84f371057a71b409db949e82fc774100b9eb35b18adf806b34d6d6c64"
+    },
+    {
+      "path": "dist/assets/shoe-black.png",
+      "bytes": 2131806,
+      "sha256": "ce2da50fae5b156ada7eb266dfd6b003fd044f1fafe6543cac9e3785c527a1c8"
+    },
+    {
+      "path": "dist/assets/shoe.png",
+      "bytes": 2098581,
+      "sha256": "c6c8ae4606a3a1e119ce6d954eec2bee43281e21d3a94092913a37dd27fb3e73"
+    },
+    {
+      "path": "dist/assets/storefront.js",
+      "bytes": 26308,
+      "sha256": "135804387c448614ab0cd90ecb6a68e7fa13f4c03cde4aff71fcd1b3ed842bde"
+    },
+    {
+      "path": "dist/assets/styles.css",
+      "bytes": 54700,
+      "sha256": "6ae5c6c03886b9b773961d1fdf67e08d479375d0c337927f643354fa5aa5d053"
+    },
+    {
+      "path": "dist/assets/ui.js",
+      "bytes": 9318,
+      "sha256": "77b54b8badc955fbe43040cd4aea96db62cd21d33cf0e78ba232a96d811c0e0a"
+    },
+    {
+      "path": "dist/assets/wallet.png",
+      "bytes": 2450672,
+      "sha256": "8eb83fb7ba9a887fa0f01c2b1064776131858fd144f38e84bb2346c1a0f7580b"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 1041,
+      "sha256": "256984bf50d8efbb4854f674f847e693fe46ff1e552c34cca554b3a64ccdfe80"
+    },
+    {
+      "path": "handoff/ACCEPTANCE-CHECKLIST.md",
+      "bytes": 18517,
+      "sha256": "7940078e1ca75bec430bfc3b530123e9a4b80d390b407dc24fe0261544e73cdd"
+    },
+    {
+      "path": "handoff/APPROVED-DESIGN-AND-RULES.md",
+      "bytes": 72873,
+      "sha256": "b7f0c66b85ae8062cae14e9db6d2a7c2b44a94deb15d2ebbf0a2e4ebeb75fd39"
+    },
+    {
+      "path": "handoff/CONTINUE-PROMPT.md",
+      "bytes": 13224,
+      "sha256": "2e3b3e77587cbac5d8b425408c15ac3514f3330a303a80e62f77396e0c987a34"
+    },
+    {
+      "path": "handoff/DESIGN-LOCK.md",
+      "bytes": 3521,
+      "sha256": "a2e0d71176d35626b36117de23c939a0431704ea031cf96c10c12edbc34b3845"
+    },
+    {
+      "path": "handoff/IMPLEMENTATION-CHECKPOINT-2026-10-21-SEO-ROUTES.md",
+      "bytes": 3193,
+      "sha256": "960c137ff9342a4cf2d9d2b21b7da6068898b4f13e60acff5cde6453e20550d4"
+    },
+    {
+      "path": "handoff/IMPLEMENTATION-CHECKPOINT-2026-10-21.md",
+      "bytes": 2750,
+      "sha256": "9c265c91b9f9d47021d36168358b471e1a9354b9f40e2b9c93c47a1bf64fe1e9"
+    },
+    {
+      "path": "handoff/MASTER-SPEC-V5.txt",
+      "bytes": 65836,
+      "sha256": "392a80121ad591402ea02ec606888451d9681db2b3e931a400e821fee9b7e722"
+    },
+    {
+      "path": "handoff/ORIGINAL-SPEC.txt",
+      "bytes": 39234,
+      "sha256": "6b57c8cd54f70882d50dee7b9bdee667e7f76fdfa842053f5956ee5ca881f8b2"
+    },
+    {
+      "path": "handoff/REQUIREMENT-COVERAGE-2026-10-21.md",
+      "bytes": 14194,
+      "sha256": "1a5ba35ca17df5c8f437120a56cd7c3c8c87439b6e217456e3f8d4dd81da5fd4"
+    },
+    {
+      "path": "handoff/REQUIREMENTS-COVERAGE.md",
+      "bytes": 10383,
+      "sha256": "ddafd06a9f3aad31299a3048b2f7e4e679df469fc9c2ec6dfc03547dce6091a8"
+    },
+    {
+      "path": "handoff/STATUS-AND-BACKLOG.md",
+      "bytes": 21507,
+      "sha256": "86d80b62e231390af3a889e88334eaedb14ba0fdf216cd389814f7f78816d4ac"
+    },
+    {
+      "path": "handoff/TEST-EVIDENCE-2026-10-21.md",
+      "bytes": 4078,
+      "sha256": "964b1cfc43b098100496de4dadcada85af78bc189336ed17e4b992716b1af251"
+    },
+    {
+      "path": "package.json",
+      "bytes": 128,
+      "sha256": "d71c730a822b03fec2260df392ae48b5c3972ac419736588e90c6f6fbc5f54d9"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "bytes": 43591,
+      "sha256": "784610438de343563025f37a3df11e457edccf3fc546509d12438f2520ee23ac"
+    }
+  ]
+}

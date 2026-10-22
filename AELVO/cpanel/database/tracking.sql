@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS aelvo_order_events (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY, order_id BIGINT UNSIGNED NOT NULL,
+ status VARCHAR(30) NOT NULL, created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY(order_id) REFERENCES aelvo_orders(id), INDEX order_timeline(order_id,id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS aelvo_tracking_challenges (
+ id CHAR(64) PRIMARY KEY, session_hash CHAR(64) NOT NULL,
+ reference VARCHAR(40) NOT NULL, phone VARCHAR(20) NOT NULL,
+ otp_hash VARCHAR(255) NULL, attempts INT UNSIGNED NOT NULL DEFAULT 0,
+ expires_at BIGINT UNSIGNED NOT NULL, verified_at BIGINT UNSIGNED NULL,
+ order_id BIGINT UNSIGNED NULL, created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY(order_id) REFERENCES aelvo_orders(id), INDEX tracking_session(session_hash,created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
