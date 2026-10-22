@@ -1,0 +1,24 @@
+name: Unzip File
+
+on:
+  workflow_dispatch: # এটি দিলে আপনি ম্যানুয়ালি রান করতে পারবেন
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Unzip File
+        run: |
+          unzip AELVO-Working-Cumulative-2026-10-22 (3).zip -d extracted-folder
+          rm AELVO-Working-Cumulative-2026-10-22 (3).zip
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Unzipped file successfully"
+          git push
