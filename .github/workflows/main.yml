@@ -1,7 +1,10 @@
 name: Unzip File
 
 on:
-  workflow_dispatch: # এটি দিলে আপনি ম্যানুয়ালি রান করতে পারবেন
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   unzip:
@@ -12,13 +15,20 @@ jobs:
 
       - name: Unzip File
         run: |
-          unzip AELVO-Working-Cumulative-2026-10-22 (3).zip -d extracted-folder
-          rm AELVO-Working-Cumulative-2026-10-22 (3).zip
+          shopt -s nullglob
+          zip_file=$(ls *.zip | head -n 1)
+          if [ -z "$zip_file" ]; then
+            echo "No zip file found!"
+            exit 1
+          fi
+          echo "Unzipping: $zip_file"
+          unzip -o "$zip_file"
+          rm "$zip_file"
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Unzipped file successfully"
+          git commit -m "Unzipped file successfully" || echo "No changes to commit"
           git push
